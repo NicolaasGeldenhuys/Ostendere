@@ -1,0 +1,110 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-image: url("../img/LoginDesktopBg.png");
+    background-size: cover;
+    background-position: center;
+    width: 1920px;
+    height: 1080px;
+}
+
+.container{
+    width: 1363px;
+    height: 800px;
+    background-color: #27292F;
+    box-shadow: 8px 5px 26px -11px rgba(0,0,0,0.31);
+    -webkit-box-shadow: 8px 5px 26px -11px rgba(0,0,0,0.31);
+    -moz-box-shadow: 8px 5px 26px -11px rgba(0,0,0,0.31);
+    margin: 0 auto;
+    border: #ffffff solid 5px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.left{
+    width: 50%;
+    height: 800px;
+    text-align: center;
+    float: left;
+    color: #27292F;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}
+
+.right{
+    width: 50%;
+    height: 800px;
+    text-align: center;
+    float: left;   
+    color: #27292F;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}
+
+.panel{
+    width: 50%;
+    height: 800px;
+    background-color: #27292F;
+    color: white;
+    border-radius: 20px;
+    z-index: 999;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    transition: all ease-in-out 1150ms;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    border: #ffffff solid 5px;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+
+.panel-slide{
+margin-left: 50%;
+}
+
+.btn{
+
+    padding-top: 206px;
+    text-align: center;
+    float: left;
+    margin-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn2{
+    padding-top: 206px;
+    text-align: center;
+    float: right;
+    margin-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+.logoLogin{
+    margin: auto 0;
+    position:absolute;
+    margin-left: -120px;
+    /* Fix centering of logo */
+}
+
+.loginIntro{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'KoHo', sans-serif;
+    margin-left: 136px;
+    margin-top: 188px;
+   margin-right: 100px;
+   width: 444px;
+   height: 692px;
+}
