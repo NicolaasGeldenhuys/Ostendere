@@ -1,11 +1,74 @@
+h1 {
+    font-family: Days One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 61px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.synopsis {
+    height: 60px;
+    width: 600px;
+    font-family: Jaldi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
 .slider {
     /*width: 1921px;*/
     height: 687px;
     background-color: rgb(179, 178, 178);
+    padding: 0;
+    position: relative;
+}
+
+.movieInfo {
+    width: 680px;
+    height: 194px;
+    background-color: rgb(70, 69, 69);
+    margin: 0 auto;
+    padding-left: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .movieInfo {
+        width: 979px;
+        height: 168px;
+        background-color: #27292F;
+        left: 20px;
+    }
+    h1 {
+        font-size: 24px;
+        line-height: 31px;
+        color: #FFFFFF;
+    }
+    .synopsis {
+        height: 30px;
+        width: 600px;
+        font-family: KoHo;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFFFF;
+        float: left;
+    }
 }
 
 .trending {
     /* width: 1921px;*/
     height: 687px;
     background-color: rgb(122, 121, 121);
+    position: relative;
 }
