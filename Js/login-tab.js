@@ -4,7 +4,7 @@ $(function(){
     
     $(".camImg").hide();
 
-    $(".btn2").hide();
+    $(".left").hide();
 
     $(".btn").on("click", function(){
         $(".panel").toggleClass("panel-slide");

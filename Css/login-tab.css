@@ -1,16 +1,16 @@
 body{
     margin: 0 auto;
     padding: 0;
-    background-image: url("../img/LoginDesktopBg.png");
+    background-image: url("../img/jpegs/Ipadloginbg.png");
     background-size: cover;
     background-position: center;
-    width: 1920px;
-    height: 1080px;
+    width: 1024px;
+    height: 768px;
 }
 
 .container{
     margin: 0 auto;
-    width: 1363px;
+    width: 519.24px;
     height: 800px;
     background-color: #27292F;
     box-shadow: 8px 5px 26px -11px rgba(0,0,0,0.31);
@@ -19,7 +19,8 @@ body{
     border: #ffffff solid 5px;
     position: relative;
     border-radius: 20px;
-    margin-top: 150px;
+    margin-top: 79px;
+    margin-left: 253px;
 }
 
 .left{
@@ -44,50 +45,6 @@ body{
     font-size: 24px;
 }
 
-.panel{
-    width: 50%;
-    height: 800px;
-    background-color: #27292F;
-    color: white;
-    border-radius: 20px;
-    z-index: 999;
-    position: absolute;
-    text-align: center;
-    left: 0;
-    transition: all ease-in-out 1150ms;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 24px;
-    border: #ffffff solid 5px;
-    margin-top: -5px;
-    margin-left: -5px;
-}
-
-.panel-slide{
-margin-left: 50%;
-}
-
-.btn{
-    margin-left: -1px;
-    margin-top: 206px;
-    text-align: center;
-    float: left;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-    cursor: pointer;
-    background-size: cover;
-    background-position: center;
-}
-
-.btn2{
-    margin-top: 206px;
-    text-align: center;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-    cursor: pointer;
-    background-size: cover;
-    background-position: center;
-}
 
 .logoLogin{
    
@@ -112,7 +69,7 @@ margin-left: 50%;
 /* ///////////////////// */
 .form-container{
     text-align: center;
-    width: 609px;
+    width: 519.24px;
     height: 666px;
     margin: 0 auto;   
     margin-top: 66px;
@@ -120,29 +77,31 @@ margin-left: 50%;
 }
 
 input{
-    width: 594px;
+    width: 447px;
     height: 36.69px;
     border: solid 2px white;
     background-color: transparent;
     border-radius: 40px;
     padding-left: 15px;
-    margin-top: 33px;
+    margin-top: 26px;
     color: white;
+    margin-left: 5px;
 }
 
 .submitbtn{
-    width: 608px;
+    width: 462.22px;
     height: 56.69px;
     background-color: #F1B000;
     color: #f7f7f7;
     margin:  0 auto;
-    margin-top: 33px;
+    margin-top: 26px;
     border-radius: 40px;
     font-size: 20.21px;
     font-weight: 300 !important;
     transition: all ease 200ms;
     font-family: 'Days One', sans-serif;
     border: none;
+    margin-left: 5px;
 }
 .submitbtn:hover{
     transform: scale(1.025);
@@ -179,7 +138,7 @@ LABEL.indented-checkbox-text
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    margin-top: 60px;
+    margin-top: 56px;
   }
   
   /* Hide the browser's default checkbox */
@@ -200,7 +159,7 @@ LABEL.indented-checkbox-text
     width: 25px;
     border: solid 2px white;
     border-radius: 100px;
-    margin-left: 211px;
+    margin-left: 170px;
   }
   
   /* On mouse-over, add a grey background color */
@@ -281,4 +240,32 @@ LABEL.indented-checkbox-text
     position: absolute;
     margin-left: -160px;
     margin-top: 144px;
+}
+
+.loginoption{
+    height: 27px;
+    width: 284px;
+    margin: 0 auto;
+    margin-top: 26px;
+}
+
+#alreadyAccount-tab{
+    color: white;
+    font-size: 15.36px;
+    font-family: 'KoHo', sans-serif;
+    font-weight: normal;
+    text-align: left;
+}
+
+.logintabbtn{
+    width: 95.11px;
+    height: 26.52px;
+    font-family: 'Days One', sans-serif;
+    font-weight: bolder;
+    font-size: 9.46px;
+    text-align: center;
+    border-radius: 18.71px;
+    float: right;
+    margin-top: -35px;
+    border: solid 2px white;
 }
