@@ -10,6 +10,18 @@ h1 {
     padding: 0;
 }
 
+h2 {
+    font-family: Days One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
 .synopsis {
     height: 60px;
     width: 600px;
@@ -43,6 +55,41 @@ h1 {
     left: 0;
 }
 
+h2 {
+    font-size: 11px;
+    line-height: 14px;
+}
+
+.btnContainer {
+    width: 622px;
+    height: 57px;
+    background-color: rgba(255, 192, 203, 0);
+    margin-top: 20px;
+}
+
+.btnWatchLater {
+    width: 297px;
+    height: 57px;
+    background-color: rgb(223, 217, 217);
+    text-align: center;
+    border-radius: 4rem;
+    padding-left: 40px;
+    padding-top: 10px;
+    float: right;
+}
+
+.btnWatchNow {
+    width: 297px;
+    height: 57px;
+    background-color: rgb(223, 217, 217);
+    text-align: center;
+    padding-left: 40px;
+    padding-top: 10px;
+    border-radius: 4rem;
+    border-color: white;
+    margin: 0;
+}
+
 @media only screen and (max-width: 1200px) {
     .movieInfo {
         width: 979px;
@@ -63,6 +110,20 @@ h1 {
         line-height: 18px;
         color: #FFFFFF;
         float: left;
+    }
+    .btnContainer {
+        width: 166px;
+        height: 72px;
+        background-color: rgb(255, 192, 203);
+        float: right;
+    }
+    .btnWatchLater {
+        height: 32px;
+        width: 166px;
+    }
+    .btnWatchNow {
+        height: 32px;
+        width: 166px;
     }
 }
 
