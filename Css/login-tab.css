@@ -11,7 +11,7 @@ body{
 .container{
     margin: 0 auto;
     width: 519.24px;
-    height: 800px;
+    height: 620.33px;
     background-color: #27292F;
     box-shadow: 8px 5px 26px -11px rgba(0,0,0,0.31);
     -webkit-box-shadow: 8px 5px 26px -11px rgba(0,0,0,0.31);
@@ -54,17 +54,7 @@ body{
     /* Fix centering of logo */
 }
 
-.loginIntro{
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    font-family: 'KoHo', sans-serif;
-    margin-left: 136px;
-    margin-top: 188px;
-   margin-right: 100px;
-   width: 444px;
-   height: 692px;
-}
+
 
 /* ///////////////////// */
 .form-container{
@@ -76,9 +66,18 @@ body{
     color: white;
 }
 
+.form-container2{
+    text-align: center;
+    width: 519.24px;
+    height: 461.33px;
+    margin: 0 auto;   
+    margin-top: 66px;
+    color: white;
+}
+
 input{
     width: 447px;
-    height: 36.69px;
+    height: 43.33px;
     border: solid 2px white;
     background-color: transparent;
     border-radius: 40px;
@@ -90,7 +89,7 @@ input{
 
 .submitbtn{
     width: 462.22px;
-    height: 56.69px;
+    height: 43.1px;
     background-color: #F1B000;
     color: #f7f7f7;
     margin:  0 auto;
@@ -110,13 +109,13 @@ input{
 
 #signuptitle{
     font-family: 'Days One', sans-serif;
-    font-size: 54px;
+    font-size: 41px;
     font-weight: normal;
 }
 
 LABEL.indented-checkbox-text
 {
-  margin-left: 2em;
+  margin-left: 85px;
   display: block;
   position: relative;
   margin-top: -1.4em;  /* make this margin match whatever your line-height is */
@@ -138,7 +137,9 @@ LABEL.indented-checkbox-text
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    margin-top: 56px;
+    margin-top: 100px;
+    padding-top: 27px;
+    margin-left: -170px;
   }
   
   /* Hide the browser's default checkbox */
@@ -198,41 +199,49 @@ LABEL.indented-checkbox-text
   }
 
   .socialsTab{
-      width: 609px;
+      width: 464px;
+      height: 37px;
       margin-top: 33px;
       background-size: cover;
       background-position: center;
       margin-left: 10px;
-      
+     
+      float: right;
+      margin-right: 27px;
   }
 
   .fbook{
-      float: left;
+      float: right;
       cursor: pointer;
+      margin-top: -43px;
+      margin-right: 200px;
   }
 
   .twitter{
-    float: left;
-    margin-left: 135px;
+    float: right;
+    margin-right: 136px;
     cursor: pointer;
+    margin-top: -43px;
 }
 
 .google{
-    float: left;
-    margin-left: 135px;
+    float: right;
+    margin-right: 68px;
     cursor: pointer;
+    margin-top: -43px;
 }
 
 .apple{
-    float: left;
-    margin-left: 135px;
+    float: right;
+    
     cursor: pointer;
+    margin-top: -43px;
 }
 
 ::placeholder{
     color: lightgray;
     font-family: 'KoHo', sans-serif;
-    font-size: 16px;
+    font-size: 15.37px;
     font-weight: bolder;
 }
 
@@ -246,7 +255,12 @@ LABEL.indented-checkbox-text
     height: 27px;
     width: 284px;
     margin: 0 auto;
-    margin-top: 26px;
+    margin-top: 43.33px; 
+}
+
+.logintabbtn:hover{
+    color: #27292F;
+    background-color: white;
 }
 
 #alreadyAccount-tab{
@@ -255,17 +269,42 @@ LABEL.indented-checkbox-text
     font-family: 'KoHo', sans-serif;
     font-weight: normal;
     text-align: left;
+  
 }
 
 .logintabbtn{
     width: 95.11px;
     height: 26.52px;
     font-family: 'Days One', sans-serif;
-    font-weight: bolder;
+    font-weight: normal;
     font-size: 9.46px;
     text-align: center;
     border-radius: 18.71px;
     float: right;
-    margin-top: -35px;
+    margin-top: -40px;
     border: solid 2px white;
+    cursor: pointer;
+}
+
+.logintabbtn p{
+   
+    margin-top: 8px;
+    
+}
+
+#socialsText{
+    font-size: 15.64px;
+    font-family: 'KoHo', sans-serif;
+    color: white;
+    font-weight: normal;
+    text-align: left;
+    
+}
+
+.checkbox-contain{
+    margin: 0 auto;
+    width: 300px;
+    height: 45px;
+    margin-top: 25px;
+   margin-right: 55px;
 }

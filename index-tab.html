@@ -27,19 +27,34 @@
                     <h3 id="signuptitle">Log In</h3>
                     <input type="email" placeholder="Your Email" required> 
                     <input type="password" placeholder="Select a Password" pattern="(?=.*\d) (?=.*[a-z]) (?=.*[A-Z]).{8,}" title="Your password must include a digit, lowercase and uppercase characters and a minimum of 8 characters." required>
+                   
+                
                     <div class="socialsTab">
-                        <img class="fbook" src="../Ostendere/img/icons/fbook.svg"  height="48px" width="48px">
-                        <img class="twitter" src="../Ostendere/img/icons/twitter.svg"  height="48px" width="48px">
-                        <img class="google" src="../Ostendere/img/icons/google.svg"  height="48px" width="48px">
-                        <img class="apple" src="../Ostendere/img/icons/Apple.svg"  height="48px" width="48px">    
+                        <p id="socialsText">Log in using socials:</p>
+                        <img class="fbook" src="../Ostendere/img/icons/fbook.svg"  height="36px" width="36px">
+                        <img class="twitter" src="../Ostendere/img/icons/twitter.svg"  height="36px" width="36px">
+                        <img class="google" src="../Ostendere/img/icons/google.svg"  height="36px" width="36px">
+                        <img class="apple" src="../Ostendere/img/icons/Apple.svg"  height="36px" width="36px">    
                     </div>
 
+                    
+                    <div class="checkbox-contain">
+                    <label class="containercheckbox">
+                    <input for="myinput" type="checkbox" required>
+                    <span  class="checkmark"></span>
+                    <label for="myinput" class="indented-checkbox-text">Keep me logged in</label>
+                    </label>
+                    </div>
                    
+                    <input type="submit" class="submitbtn" value="Sign Up">
+
+                    <div class="loginoption">
+                        <p id="alreadyAccount-tab">Don't have an account?</p>
+                        <div class="logintabbtn"><p>Sign Up</p></div>
+                    </div>
                     
-                    
-                    <input type="submit" class="submitbtn" value="Log In">
                 </form>
-            </div><!--form-container-->   
+            </div><!--form-container--> 
         </div>
 
 
@@ -69,7 +84,7 @@
 
                     <div class="loginoption">
                         <p id="alreadyAccount-tab">Already have an account?</p>
-                        <div class="logintabbtn">Log In</div>
+                        <div class="logintabbtn"><p>Log In</p></div>
                     </div>
                     
                 </form>
