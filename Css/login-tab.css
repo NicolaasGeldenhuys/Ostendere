@@ -11,7 +11,22 @@ body{
 .container{
     margin: 0 auto;
     width: 519.24px;
-    height: 620.33px;
+    height: 550px;
+    background-color: #27292F;
+    box-shadow: 8px 5px 26px -11px rgba(0,0,0,0.31);
+    -webkit-box-shadow: 8px 5px 26px -11px rgba(0,0,0,0.31);
+    -moz-box-shadow: 8px 5px 26px -11px rgba(0,0,0,0.31);
+    border: #ffffff solid 5px;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 79px;
+    margin-left: 253px;
+}
+
+.container2{
+    margin: 0 auto;
+    width: 519.24px;
+    height: 700px;
     background-color: #27292F;
     box-shadow: 8px 5px 26px -11px rgba(0,0,0,0.31);
     -webkit-box-shadow: 8px 5px 26px -11px rgba(0,0,0,0.31);
@@ -69,7 +84,7 @@ body{
 .form-container2{
     text-align: center;
     width: 519.24px;
-    height: 461.33px;
+    height: 609.7px;
     margin: 0 auto;   
     margin-top: 66px;
     color: white;
@@ -140,8 +155,13 @@ LABEL.indented-checkbox-text
     margin-top: 100px;
     padding-top: 27px;
     margin-left: -170px;
+    position: absolute;
   }
   
+  .indented-checkbox-text2{
+      position: relative;
+  }
+
   /* Hide the browser's default checkbox */
   .containercheckbox input {
     position: absolute;
@@ -205,7 +225,6 @@ LABEL.indented-checkbox-text
       background-size: cover;
       background-position: center;
       margin-left: 10px;
-     
       float: right;
       margin-right: 27px;
   }
@@ -263,6 +282,12 @@ LABEL.indented-checkbox-text
     background-color: white;
 }
 
+.signtabbtn:hover{
+    color: #27292F;
+    background-color: white;
+}
+
+
 #alreadyAccount-tab{
     color: white;
     font-size: 15.36px;
@@ -287,6 +312,26 @@ LABEL.indented-checkbox-text
 }
 
 .logintabbtn p{
+   
+    margin-top: 8px;
+    
+}
+
+.signtabbtn{
+    width: 95.11px;
+    height: 26.52px;
+    font-family: 'Days One', sans-serif;
+    font-weight: normal;
+    font-size: 9.46px;
+    text-align: center;
+    border-radius: 18.71px;
+    float: right;
+    margin-top: -40px;
+    border: solid 2px white;
+    cursor: pointer;
+}
+
+.signtabbtn p{
    
     margin-top: 8px;
     

@@ -1,0 +1,192 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-image: url("../img/jpegs/Foldbg.png");
+    background-size: cover;
+    background-position: center;
+    width: 280px;
+    height: 653px;
+}
+
+.container{
+    width: 238px;
+    height: 407px;
+    background-color: #27292F;
+    float: left;
+    border: white solid 2px;
+    border-radius: 20px;
+    margin-top: 133px;
+    margin-left: 21px;
+}
+
+.container2{
+    width: 238px;
+    height: 242px;
+    background-color: #27292F;
+    float: left;
+    border: white solid 2px;
+    border-radius: 20px;
+    margin-top: 207px;
+    margin-left: 21px;
+}
+
+.signuptitle{
+    width: 100%;
+    height: 58px;
+    font-family: 'Days One', sans-serif;
+    font-size: 22.13px;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+input{
+    width: 194px;
+    height: 27px;
+    border: solid 1.52px white;
+    background-color: transparent;
+    border-radius: 30.45px;
+    padding-left: 15px;
+    margin-top: 10px;
+    color: white;
+    margin-left: 11px;
+    font-family: 'KoHo', sans-serif;
+}
+
+.info{
+    margin-top: -60px;
+}
+
+.keeploggedbtn{
+    width: 209px;
+    height: 27px;
+    border: solid 1.52px white;
+    background-color: #962424;
+    border-radius: 30.45px;
+    margin-top: 10px;
+    color: white;
+    margin-left: 11px;
+    cursor: pointer;
+}
+
+.keeploggedbtntog{
+    width: 209px;
+    height: 27px;
+    border: solid 1.52px white;
+    background-color: #4F9624;
+    border-radius: 30.45px;
+    margin-top: 10px;
+    color: white;
+    margin-left: 11px;
+    cursor: pointer;
+}
+
+p{
+    text-align: center;
+    font-family: 'KoHo', sans-serif;
+    font-size: 8.74px;
+    font-weight: normal;
+    color: white;
+}
+
+.socialsTab{
+    width: 194.4px;
+    height: 29.14px;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+    float: right;
+    margin-right: 26px;
+}
+
+.twitter{
+    margin-left: 22px;
+}
+
+.google{
+    margin-left: 22px;
+}
+
+.apple{
+    margin-left: 22px;
+}
+
+.submitbtn{
+    width: 209px;
+    height: 29.84px;
+    background-color: #F1B000;
+    border-radius: 21.05px;
+    margin-top: 10px;
+    color: white;
+    margin-left: 11px;
+}
+
+.loginoption{
+    height: 16px;
+    width: 209px; 
+    margin: 0 auto;
+    margin-top: -4px; 
+}
+
+.alreadyAccount-tab{
+    color: white;
+    font-size: 15.36px;
+    font-family: 'KoHo', sans-serif;
+    font-weight: normal;
+    text-align: left;
+}
+
+.signtabbtn{
+    width: 45.11px;
+    height: 16px;
+    font-family: 'Days One', sans-serif;
+    font-weight: normal;
+    font-size: 5px;
+    text-align: center;
+    border-radius: 8.88px;
+    float: right;
+    margin-top: -35px;
+    border: solid 2px white;
+    cursor: pointer;
+}
+
+.signtabbtn p{
+   
+    margin-top: 1px;
+    
+}
+
+.logintabbtn{
+    width: 45.11px;
+    height: 16px;
+    font-family: 'Days One', sans-serif;
+    font-weight: normal;
+    font-size: 5px;
+    text-align: center;
+    border-radius: 8.88px;
+    float: right;
+    margin-top: -35px;
+    border: solid 2px white;
+    cursor: pointer;
+}
+
+.logintabbtn p{
+   
+    margin-top: 1px;
+    
+}
+
+::placeholder{
+    color: gray;
+    font-family: 'KoHo', sans-serif;
+   
+    font-weight: bolder;
+}
+
+.submitbtn:hover{
+    transform: scale(1.025);
+    cursor: pointer;
+}

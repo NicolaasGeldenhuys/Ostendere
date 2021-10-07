@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../Ostendere/Css/login-mob.css">
+  <!-- JS -->
+  <script src="../Ostendere/Js/login-mob.js"></script>;
+ <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Days+One&family=KoHo:wght@600&display=swap" rel="stylesheet">
+
+ <title>Ostendere</title>
+
+</head>
+<body>
+    
+    <div class="container">
+        <h3 class="signuptitle">Sign Up</h3>    
+
+        <form class="info" autocomplete="on">
+            <input type="text" placeholder="First Name" autofocus required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="email" placeholder="Your Email" required> 
+            <input type="password" placeholder="Select a Password" pattern="(?=.*\d) (?=.*[a-z]) (?=.*[A-Z]).{8,}" title="Your password must include a digit, lowercase and uppercase characters and a minimum of 8 characters." required>
+            <input type="password" placeholder="Confirm Password" required>
+        </form>
+
+        <div class="keeploggedbtn">
+            <p class="loggedtext">Keep me logged in</p>
+        </div>
+
+        <div class="socialsTab">
+            <img class="fbook" src="../Ostendere/img/icons/fbook.svg"  height="29.07px" width="29.07px">
+            <img class="twitter" src="../Ostendere/img/icons/twitter.svg"  height="29.07px" width="29.07px">
+            <img class="google" src="../Ostendere/img/icons/google.svg"  height="29.07px" width="29.07px">
+            <img class="apple" src="../Ostendere/img/icons/Apple.svg"  height="29.07px" width="29.07px">    
+        </div>
+
+        <input type="submit" class="submitbtn" value="Sign Up">
+
+        <div class="loginoption">
+            <p class="alreadyAccount-tab">Don't have an account?</p>
+            <div class="signtabbtn"><p>Sign Up</p></div>
+        </div>
+
+    </div>
+
+    <div class="container2">
+        <h3 class="signuptitle">Log In</h3>    
+
+        <form class="info" autocomplete="on">
+            <input type="email" placeholder="Your Email" autofocus required> 
+            <input type="password" placeholder="Password" pattern="(?=.*\d) (?=.*[a-z]) (?=.*[A-Z]).{8,}" title="Your password must include a digit, lowercase and uppercase characters and a minimum of 8 characters." required>
+        </form>
+
+        <!-- <div class="keeploggedbtn">
+            <p class="loggedtext">Keep me logged in</p>
+        </div> -->
+
+        <div class="socialsTab">
+            <img class="fbook" src="../Ostendere/img/icons/fbook.svg"  height="29.07px" width="29.07px">
+            <img class="twitter" src="../Ostendere/img/icons/twitter.svg"  height="29.07px" width="29.07px">
+            <img class="google" src="../Ostendere/img/icons/google.svg"  height="29.07px" width="29.07px">
+            <img class="apple" src="../Ostendere/img/icons/Apple.svg"  height="29.07px" width="29.07px">    
+        </div>
+
+        <input type="submit" class="submitbtn" value="Log In">
+
+        <div class="loginoption">
+            <p class="alreadyAccount-tab">Have an account?</p>
+            <div class="logintabbtn"><p>Log In</p></div>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

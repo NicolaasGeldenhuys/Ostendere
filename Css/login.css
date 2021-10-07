@@ -144,6 +144,7 @@ input{
     font-family: 'Days One', sans-serif;
     border: none;
 }
+
 .submitbtn:hover{
     transform: scale(1.025);
     cursor: pointer;
@@ -153,6 +154,7 @@ input{
     font-family: 'Days One', sans-serif;
     font-size: 54px;
     font-weight: normal;
+    color: white;
 }
 
 LABEL.indented-checkbox-text

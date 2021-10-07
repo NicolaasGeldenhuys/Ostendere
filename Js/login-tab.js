@@ -4,23 +4,21 @@ $(function(){
     
     
 
-    $(".right").hide();
-    $(".left").show();
+    $(".container").slideUp();
+    $(".container2").slideDown();
 
 
-    // $(".btn").on("click", function(){
-    //     $(".panel").toggleClass("panel-slide");
+    $(".signtabbtn").on("click", function(){
+        $(".container").slideUp();
+        $(".container2").slideDown();
+       
+    });
 
-    //     $(".btn2").slideDown(1000);
-
-    //     $(".btn").slideUp(1000);
-
-    //     $(".loginIntro").slideUp(1000);
-
-    //     $(".logoLogin").slideUp(1000);
-
-    //     $(".camImg").show(1000);
-    // });
+   $(".logintabbtn").on("click", function(){
+         $(".container").slideDown();
+         $(".container2").slideUp();
+        
+     });
 
     // $(".btn").mouseenter(function(){
     //     $(this).attr("src","img/LoginButton2.png");
