@@ -13,10 +13,22 @@
     background-size:auto;
 }
 
+@media only screen  and (max-width:280px){
+    .header-content{
+     height: 465px;
+    }
+}
+
 /* Navigation */
 .navigation{
     height: 105px;
     width: 100%;
+}
+
+@media only screen  and (max-width:280px){
+    .navigation{
+        display: none;
+    }
 }
 
 .logo{
@@ -29,6 +41,12 @@
 
     background-image: url("../img/logo/logo.svg");
     background-position: center;
+}
+
+@media only screen  and (max-width:280px){
+    .logo{
+        opacity: 1;
+    }
 }
 
 .search-navigation{
@@ -75,7 +93,7 @@
     height: 50px;
     width: 100px;
     margin-top: 27px;
-    margin-right: 100px;
+    margin-right: 6%;
 
     font-size: 24px;
     text-align: center;
@@ -87,7 +105,7 @@
     height: 50px;
     width: 100px;
     margin-top: 27px;
-    margin-right: 100px;
+    margin-right: 6%;
 
     font-size: 24px;
     text-align: center;
@@ -104,7 +122,7 @@
     height: 50px;
     width: 150px;
     margin-top: 27px;
-    margin-right: 100px;
+    margin-right: 6%;
 
     font-size: 24px;
     text-align: center;
@@ -116,7 +134,7 @@
     height: 50px;
     width: 254px;
     margin-top: 27px;
-    margin-right: 18px;
+    margin-right: 1%;
 
     font-size: 24px;
     text-align: center;
@@ -150,6 +168,145 @@
     font-weight: bold ;
 }
 
+/* Navigation galaxy */
+.logo-sm{
+    height: 30px;
+    width: 77px;
+
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+
+    background-image: url("../img/logo/logo.svg");
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (min-width: 280px){
+    .logo-sm{
+        display: none;
+    }
+}
+
+    a{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .p-menu1{
+     height: 100%;
+  }
+  
+  /* Hamburger */
+  .hamburger1 {
+    height: 45px;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    z-index: 120;
+
+    float: right;
+  }
+  
+  .hamburger1 div {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 40px;
+    height: 5px;
+    margin-top: 7px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #toggle1 {
+    display: none;
+  }
+  
+  #toggle1:checked + .hamburger1 .top {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    margin-top: 22.5px;
+  }
+  
+  #toggle1:checked + .hamburger1 .meat {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-top: -5px;
+  }
+  
+  #toggle1:checked + .hamburger1 .bottom {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  
+  #toggle1:checked ~ .menu1 {
+    height: 340px;
+  }
+  
+  
+  /* Menu */
+  .menu1 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: 1fr repeat(4, 0.5fr);
+    grid-row-gap: 25px;
+    padding: 0;
+    list-style: none;
+    clear: both;
+    width: auto;
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+    z-index: 120;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  .menu1 a:first-child {
+    margin-top: 40px;
+  }
+  
+  .menu1 a:last-child {
+    margin-bottom: 40px;
+  }
+  
+  .link1 {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    font: 700 20px 'Oswald', sans-serif;
+  }
+  
+  .link1 a:hover {
+    background-color: #fff;
+    color: rgb(61, 61, 61);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+    font-weight: bold ;
+  }
+
+  .link1 a:link {
+    text-decoration: none ;
+    color: white ;
+  }
+
+.link1 a:visited {
+    text-decoration: none ;
+    color: white ;
+  }
+
+  @media screen and (max-width: 280px){
+    .p-menu1{
+        display: none;
+    }
+}
+
 /* Search bar */
 .search-bar{
     width: 95%;
@@ -161,6 +318,12 @@
     border-width: 2px ;
     border-style: solid;
     border-radius: 15px;
+}
+
+@media only screen  and (max-width:280px){
+    .search-bar{
+        display: none;
+    }
 }
 
 .drop-icon{
@@ -175,13 +338,11 @@
     float: right;
 }
 
-.year{
+#year{
     width: 10%;
     height: 100%;
-    padding-top: 10px;
     padding-left: 10px;
 
-    color: white;
     border-right-color: white;
     border-right-width: 1px ;
     border-right-style: solid;
@@ -189,13 +350,11 @@
     float: left;
 }
 
-.rating{
+#rating{
     width: 10%;
     height: 100%;
-    padding-top: 10px;
     padding-left: 10px;
 
-    color: white;
     border-right-color: white;
     border-right-width: 1px ;
     border-right-style: solid;
@@ -203,13 +362,11 @@
     float: left;
 }
 
-.genre{
+#genre{
     width: 10%;
     height: 100%;
-    padding-top: 10px;
     padding-left: 10px;
 
-    color: white;
     border-right-color: white;
     border-right-width: 1px ;
     border-right-style: solid;
@@ -250,15 +407,11 @@
     float: right;
 }
 
-.sort-by{
+#sort-by{
     width: 10%;
     height: 100%;
-    padding-top: 10px;
 
     color: white;
-    border-right-color: white;
-    border-right-width: 1px ;
-    border-right-style: solid;
 
     float: right;
 }
@@ -267,6 +420,20 @@
     margin-right: 15px;
 
     float: right;
+}
+
+.drop-down {
+    color: white;
+
+    border-radius: 3px;
+
+    background-color: transparent;
+    border: transparent;
+}
+
+.drop-down option{
+    background-color:rgba(45, 45, 45, 0);
+    color: black;
 }
 
 /* Content section */
@@ -284,6 +451,14 @@
     float: left;
 }
 
+@media only screen and (max-width:280px){
+    .content-block{
+    height: 280px;
+    margin-left: 5%;
+    margin-top: 0px;
+    }
+}
+
 .title-sortBy{
     width: fit-content;
     height: fit-content;
@@ -291,6 +466,12 @@
     color: white;
 
     font-size: 45px;
+}
+
+@media only screen and (max-width:280px){
+    .title-sortBy{
+        font-size: 35px;
+    }
 }
 
 /* content boxes */
@@ -306,7 +487,14 @@
     float: left;
 }
 
-#rating{
+@media only screen and (max-width:280px){
+    .block{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+#block-rating{
     width: 32px;
     height: 32px;
     margin: 10px;
@@ -345,6 +533,20 @@
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
+
+@media only screen and (max-width:280px){
+    .info_box{
+    width: 100%;
+    height: 25%;
+    margin-top: 75%;
+
+    background-color: rgba(39, 41, 47, 0.5);
+    opacity: 0.5;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    }
+}
+
 
 .movie_name{
     margin: 13px;
