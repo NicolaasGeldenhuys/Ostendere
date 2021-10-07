@@ -2,16 +2,16 @@ $(document).ready(function(){
 
     //not permanent
     var genres = [
-        {genre: "fiction"},
-        {genre: "mystery"},
-        {genre: "horror/thriller"},
-        {genre: "drama"},
-        {genre: "historical"},
-        {genre: "western"},
-        {genre: "fantasy"},
-        {genre: "action"},
-        {genre: "adventure"},
-        {genre: "comedy"},
+        {genre: "Fiction"},
+        {genre: "Mystery"},
+        {genre: "Horror/thriller"},
+        {genre: "Drama"},
+        {genre: "Historical"},
+        {genre: "Western"},
+        {genre: "Fantasy"},
+        {genre: "Action"},
+        {genre: "Adventure"},
+        {genre: "Comedy"},
     ];
 
     //like
@@ -30,7 +30,7 @@ $(document).ready(function(){
     
         <div class="block">
     
-            <div id="rating">
+            <div id="block-rating">
                 <!--(api)-->
             </div>
             <div class="like"></div>
