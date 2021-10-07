@@ -30,13 +30,9 @@
  <div class="header-content">
 
     <!--Navigation-->
+    <!--Desktop/ ipad-->
 <div class="navigation">
     <div class="logo"></div>
-
-    <div class="search-navigation">
-    <div class="search-icon"></div>
-    <input class="search" id="search-1" type="text" placeholder="Search...">
-    </div>
 
     <div class="profile">
     <a id="name" href="Watch-Later-Page.html">Welcome Mike, M</a>
@@ -48,33 +44,77 @@
     <div class="home"><a href="Landing-Page.html">Home</a></div>
 </div>
 
+    <!--Galaxy-->
+    <div class="logo-sm"></div>
+
+    <!-- Burger -->
+    <section class="p-menu1">
+  <nav id="navbar" class="navigation-sm" role="navigation">
+    <input id="toggle1" type="checkbox" />
+    <label class="hamburger1" for="toggle1">
+      <div class="top"></div>
+      <div class="meat"></div>
+      <div class="bottom"></div>
+    </label>
+  
+    <nav class="menu1">
+      <a class="link1" href="Landing-Page.html">Home</a>
+      <a class="link1" href="Movie-Libary-Page.html">Browse</a>
+      <a class="link1" href="Watch-Later-Page.html">Watch later</a>
+    </nav>
+    </nav>
+    </section>
+
     <!-- Search bar -->
 <div class="search-bar">
 
-    <div class="year">
-    Year
-    <div class="drop-icon"></div>
-    </div>
+      <select name="year" class="drop-down" id="year">
+        <option value="0">Year</option> 
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+      </select>
 
-    <div class="rating">
-    Rating
-    <div class="drop-icon"></div>
-    </div>
+    <select name="rating" class="drop-down" id="rating">
+        <option value="0">Rating</option> 
+        <option value="10">10</option>
+        <option value="9">9</option>
+        <option value="8">8</option>
+        <option value="7">7</option>
+        <option value="6">6</option>
+        <option value="5">5</option>
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+    </select>
 
-    <div class="genre"> 
-    Genre
-    <div class="drop-icon"></div>
-    </div>
+    <select name="genre" class="drop-down" id="genre">
+        <option value="0">Genres</option> 
+        <option value="Fiction">Fiction</option>
+        <option value="Mystery">Mystery</option>
+        <option value="Horror/thriller">Horror/thriller</option>
+        <option value="Drama">Drama</option>
+        <option value="Historical">Historical</option>
+        <option value="Western">Western</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Action">Action</option>
+        <option value="Adventure">Adventure</option>
+        <option value="Comedy">Comedy</option>
+    </select>
 
     <div class="search-searchBar"> 
     <div id="search-icon-2"></div>
     <input class="search" id="search-2" type="text" placeholder="Search...">
     </div>
 
-    <div class="sort-by">
-    <div id="drop-icon-sortBy" class="drop-icon"></div> 
-    <div class="sort">Sort By</div>
-    </div>
+    <select name="sort-by" class="drop-down" id="sort-by">
+        <option value="0">Sort by</option> 
+        <option value="Highest-lowest Rating">Highest-lowest Rating</option>
+        <option value="Lowest-Highest Rating">Lowest-Highest Rating</option>
+        <option value="Year">Year</option>
+    </select>
 
 </div>
     <!-- active list -->
@@ -83,7 +123,7 @@
 
     <div class="block">
 
-        <div id="rating">
+        <div id="block-rating">
             <!--(api)-->
         </div>
         <div class="like"></div>
