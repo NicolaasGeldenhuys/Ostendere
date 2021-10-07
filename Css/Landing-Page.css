@@ -8,18 +8,33 @@ h1 {
     align-items: center;
     margin: 0 auto;
     padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
     font-family: Days One;
     font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 26px;
     color: white;
     display: flex;
     align-items: center;
     text-align: center;
+}
+
+h3 {
+    font-family: Days One;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 61px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 50%;
+    color: white;
 }
 
 .synopsis {
@@ -55,11 +70,6 @@ h2 {
     left: 0;
 }
 
-h2 {
-    font-size: 11px;
-    line-height: 14px;
-}
-
 .btnContainer {
     width: 622px;
     height: 57px;
@@ -84,7 +94,6 @@ h2 {
     background-color: rgb(223, 217, 217);
     text-align: center;
     padding-left: 40px;
-    padding-top: 10px;
     border-radius: 4rem;
     border-color: white;
     margin: 0;
@@ -102,6 +111,10 @@ h2 {
         line-height: 31px;
         color: #FFFFFF;
     }
+    h2 {
+        font-size: 20px !important;
+        /*line-height: 14px;*/
+    }
     .synopsis {
         height: 30px;
         width: 600px;
@@ -112,18 +125,27 @@ h2 {
         float: left;
     }
     .btnContainer {
-        width: 166px;
-        height: 72px;
+        width: 200px;
+        height: 100px;
         background-color: rgb(255, 192, 203);
         float: right;
+        position: relative;
     }
     .btnWatchLater {
-        height: 32px;
-        width: 166px;
+        width: 160px;
+        height: 30px;
+        position: absolute;
+        padding-left: 20px;
+        padding-top: 4px;
+        bottom: 0;
+        left: 0;
     }
     .btnWatchNow {
-        height: 32px;
-        width: 166px;
+        width: 160px;
+        height: 30px;
+        padding-left: 20px;
+        padding-top: 4px;
+        position: absolute;
     }
 }
 
@@ -142,6 +164,7 @@ h2 {
     background-color: rgb(95, 93, 93);
     display: flex;
     justify-content: center;
+    margin-left: 25px;
 }
 
 .movie {
@@ -163,4 +186,55 @@ h2 {
     background-color: rgb(197, 131, 7);
     box-shadow: 2px 2px 2px #000;
     z-index: 2;
+}
+
+.M_scroller {
+    height: 348px;
+    background-color: gray;
+}
+
+.M_WatchLater {
+    height: 100px;
+    background-color: rgb(99, 98, 98);
+    align-items: center;
+}
+
+.M_explore {
+    height: 100px;
+    background-color: rgb(71, 71, 71);
+}
+
+.M_footer {
+    height: 280px;
+    background-color: rgb(48, 47, 47);
+}
+
+.card_T {
+    width: 82px;
+    height: 52px;
+    background-color: orange;
+    display: inline-block;
+}
+
+.text_container {
+    width: 73px;
+    height: 11px;
+    background: #FFFFFF;
+    border: 0.5px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+h4 {
+    font-family: Days One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px !important;
+    line-height: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
