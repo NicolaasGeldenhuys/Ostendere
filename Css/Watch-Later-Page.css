@@ -16,6 +16,12 @@
     width: 100%;
 }
 
+@media only screen  and (max-width:280px){
+    .navigation{
+        display: none;
+    }
+}
+
 .logo{
     height: 65px;
     width: 190px;
@@ -26,6 +32,15 @@
 
     background-image: url("../img/logo/logo.svg");
     background-position: center;
+}
+
+@media only screen  and (max-width:1024px){
+    .logo{
+        height: 33px;
+        width: 95px;
+
+        background-size: cover;
+    }
 }
 
 .search-navigation{
@@ -54,6 +69,13 @@
     float: left;
 }
 
+@media only screen  and (max-width:1024px){
+    .search-icon{
+        width: 9px;
+        height: 9px;
+    }
+}
+
 .search{
     width: 390px;
     height: 28px;
@@ -64,6 +86,14 @@
     background-color: transparent;
 }
 
+@media only screen  and (max-width:1024px){
+    .search-navigation{
+    width: 190px;
+    height: 28px;
+    border-bottom-width: 3px ;
+    }
+}
+
 #search-1{
     float: right;
 }
@@ -72,7 +102,7 @@
     height: 50px;
     width: 100px;
     margin-top: 27px;
-    margin-right: 100px;
+    margin-right: 6%;
 
     font-size: 24px;
     text-align: center;
@@ -80,23 +110,40 @@
     float: right;
 }
 
+@media only screen  and (max-width:1024px){
+    .home{
+    height: 50px;
+    width: 50px;
+    font-size: 10px;
+    }
+}
+
+
 .browse{
     height: 50px;
     width: 100px;
     margin-top: 27px;
-    margin-right: 100px;
+    margin-right: 6%;
 
     font-size: 24px;
     text-align: center;
 
     float: right;
+}
+
+@media only screen  and (max-width:1024px){
+    .browse{
+    height: 50px;
+    width: 50px;
+    font-size: 10px;
+    }
 }
 
 .watch-later{
     height: 50px;
     width: 150px;
     margin-top: 27px;
-    margin-right: 100px;
+    margin-right: 6%;
 
     font-size: 24px;
     text-align: center;
@@ -109,16 +156,32 @@
     float: right;
 }
 
+@media only screen  and (max-width:1024px){
+    .watch-later{
+    height: 50px;
+    width: 50px;
+    font-size: 10px;
+    }
+}
+
 .profile{
     height: 50px;
     width: 254px;
     margin-top: 27px;
-    margin-right: 18px;
+    margin-right: 1%;
 
     font-size: 24px;
     text-align: center;
 
     float: right;
+}
+
+@media only screen  and (max-width:1024px){
+    .profile{
+    height: 50px;
+    width: 50px;
+    font-size: 10px;
+    }
 }
 
 .profile-pic{
@@ -131,6 +194,13 @@
     border-radius: 22px;
 
     float: right;
+}
+
+@media only screen  and (max-width:1024px){
+    .profile-pic{
+    height: 25px;
+    width: 25px;
+    }
 }
 
 .navigation a:link {
@@ -160,6 +230,34 @@
     float: left;
 }
 
+@media only screen  and (max-width:1024px){
+    .active-movie{
+        width: 90%;
+    }
+}
+
+@media only screen  and (max-width:280px){
+    .active-movie{
+        width: 90%;
+    }
+}
+
+.play_button{
+    width: 134px;
+    height: 134px;
+    margin-left: 45%;
+    margin-top: 290px;
+
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/icons/play_movie.svg");
+}
+
+.play_button:hover{
+    opacity: 1;
+}
+
 /* Next Movies */
 .next-movies-containner{
     width: 20%;
@@ -169,6 +267,22 @@
     float: right;
 }
 
+@media only screen  and (max-width:1024px){
+    .next-movies-containner{
+        float: none;
+        height: fit-content;
+        width: 100%;
+    }
+}
+
+@media only screen  and (max-width:280px){
+    .next-movies-containner{
+        float: none;
+        height: fit-content;
+        width: 100%;
+    }
+}
+
 .block{
     width: 100%;
     height: 220px;
@@ -176,4 +290,81 @@
 
     background-color: #F1B000;
     border-radius: 20px;
+}
+
+@media only screen  and (max-width:1024px){
+    .next-movies-containner{
+        float: left;       
+        margin-left: 30px;
+    }
+}
+
+/* Movie information */
+.synopsis{
+    width: 70%;
+    height: 170px;
+
+    text-align: center;
+    font-size: 36px;
+    color: white;
+}
+
+.sunopsis-body{
+    width: 100%;
+    height: 120px ;
+
+    font-size: 18px;
+    text-align: center;
+}
+
+.cast{
+    width: 50%;
+    height: 250px;
+
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    border-color: white;
+    border-right-style: solid;
+    border-right-width: 3px;
+
+    float: left;
+}
+
+.cast-body{
+    width: 70%;
+    height: 120px ;
+
+    font-size: 18px;
+}
+
+.directors{
+    width: 50%;
+    height: 250px;
+
+    text-align: center;
+    font-size: 36px;
+    color: white;
+
+    float: right;
+}
+
+.directors-body{
+    width: 70%;
+    height: 120px ;
+
+    font-size: 18px;
+}
+
+.information-container{
+    width: 70%;
+    height: 250px;
+
+    border-color: white ;
+    border-bottom-style: solid ;
+    border-bottom-width: 3px ;
+    border-top-style: solid ;
+    border-top-width: 3px ;
+    margin-top: 700px;
+
 }
