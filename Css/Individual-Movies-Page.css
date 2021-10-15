@@ -1,0 +1,351 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1920px;
+    max-height: 1080px;
+}
+
+.container{
+    width: 1920px;
+    height: 1080px;
+    background-image: url("../img/IndDeskBG.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container */
+.container-fluid{
+    height: fit-content;
+    background-color: transparent;
+}
+
+.content-box{
+    display: block;
+    overflow: auto;
+    width: 100%;  
+}
+
+/* Navigation */
+.navigation{
+    height: 105px;
+    width: 100%;
+    font-family: 'Days One', sans-serif;
+    
+}
+
+@media only screen  and (max-width:280px){
+    .navigation{
+        display: none;
+    }
+}
+
+.logo{
+    height: 65px;
+    width: 190px;
+
+    float: left;
+    margin-left: 15px;
+    margin-top: 20px;
+
+    background-image: url("../img/logo/logo.svg");
+    background-position: center;
+}
+
+@media only screen  and (max-width:1024px){
+    .logo{
+        height: 33px;
+        width: 95px;
+
+        background-size: cover;
+    }
+}
+
+.search-navigation{
+    width: 420px;
+    height: 35px;
+    margin-left: 250px;
+    margin-top: 35px;
+
+    border-bottom-color: white;
+    border-bottom-width: 5px ;
+    border-bottom-style: solid;
+    border-radius: 5px;
+
+    float: left;
+}
+
+.search-icon{
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+
+    background-image: url("../img/icons/search_icon.svg");
+    background-position: center;
+    background-size: cover;
+
+    float: left;
+}
+
+@media only screen  and (max-width:1024px){
+    .search-icon{
+        width: 9px;
+        height: 9px;
+    }
+}
+
+.search{
+    width: 390px;
+    height: 28px;
+    color: white;
+    border: none ;
+    outline: none;
+    background-color: transparent;
+}
+
+::placeholder{
+    color: white;
+    font-family: 'Days One', sans-serif;
+    font-size: 16px;
+}
+
+@media only screen  and (max-width:1024px){
+    .search-navigation{
+    width: 190px;
+    height: 28px;
+    border-bottom-width: 3px ;
+    }
+}
+
+#search-1{
+    float: right;
+}
+
+.home{
+    height: 50px;
+    width: 100px;
+    margin-top: 27px;
+    margin-right: 6%;
+
+    font-size: 24px;
+    text-align: center;
+
+    float: right;
+}
+
+@media only screen  and (max-width:1024px){
+    .home{
+    height: 50px;
+    width: 50px;
+    font-size: 10px;
+    }
+}
+
+
+.browse{
+    height: 50px;
+    width: 100px;
+    margin-top: 27px;
+    margin-right: 6%;
+
+    font-size: 24px;
+    text-align: center;
+
+    float: right;
+}
+
+@media only screen  and (max-width:1024px){
+    .browse{
+    height: 50px;
+    width: 50px;
+    font-size: 10px;
+    }
+}
+
+.watch-later{
+    height: 50px;
+    width: 150px;
+    margin-top: 27px;
+    margin-right: 6%;
+
+    font-size: 22px;
+    text-align: center;
+
+    border-bottom-color: #F1B000;
+    border-bottom-width: 5px ;
+    border-bottom-style: solid;
+    border-radius: 5px;
+
+    float: right;
+}
+
+@media only screen  and (max-width:1024px){
+    .watch-later{
+    height: 50px;
+    width: 50px;
+    font-size: 10px;
+    }
+}
+
+.profile{
+    height: 50px;
+    width: 254px;
+    margin-top: 27px;
+    margin-right: 1%;
+
+    font-size: 24px;
+    text-align: center;
+
+    float: right;
+}
+
+@media only screen  and (max-width:1024px){
+    .profile{
+    height: 50px;
+    width: 50px;
+    font-size: 10px;
+    }
+}
+
+.profile-pic{
+    height: 44px;
+    width: 44px;
+
+    background-image: url("../img/jpegs/random_profile.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 22px;
+
+    float: right;
+}
+
+@media only screen  and (max-width:1024px){
+    .profile-pic{
+    height: 25px;
+    width: 25px;
+    }
+}
+
+.navigation a:link {
+    text-decoration: none ;
+    color: white ;
+  }
+
+.navigation a:visited {
+    text-decoration: none ;
+    color: white ;
+  }
+
+.navigation a:hover {
+    font-weight: bold ;
+}
+
+
+/* End of Nav */
+
+.title-div{
+    height: 94px;
+    width: 1920px;
+    margin-top: 49px;
+    float: left;
+}
+
+#title{
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 64px;
+    text-align: left;
+    font-family: 'Days One', sans-serif;
+    margin-left: 136px;
+    color: white;
+}
+
+.buttons-div{
+    height: 57px;
+    width: 622px;
+    margin-top: 400px;
+    margin-left: 136px;
+}
+
+.watchnow{
+    height: 57px;
+    width: 297px;
+    border-radius: 40px;
+    float: left;
+    background-color: #F1B000;
+}
+
+.watchnow-title{
+    height: 57px;
+    width: 254px;
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 21px;
+    text-align: center;
+    font-family: 'Days One', sans-serif;
+    color: white;
+    margin-top: 5%;
+}
+
+.watchnowicon{
+    float: right;
+    margin-right: 15px;
+    margin-top: -60px;
+}
+
+.watchlater{
+    height: 57px;
+    width: 297px;
+    border-radius: 40px;
+    float: right;
+    border: #FFFFFF solid 2px;
+    background-color: transparent;
+}
+
+.watchlater-title{
+    height: 57px;
+    width: 254px;
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 21px;
+    text-align: center;
+    font-family: 'Days One', sans-serif;
+    color: white;
+    margin-top: 5%;
+}
+
+.watchlatericon{
+    float: right;
+    margin-right: 15px;
+    margin-top: -60px;
+}
+
+.details{
+    width: 1784px;
+    height: 179px;
+    background-color: grey;
+    float: left;
+    margin-left: 136px;
+    margin-top: 15px;
+}
+
+.directors{
+    margin-top: 14px;
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 26px;
+    text-align: left;
+    font-family: 'Days One', sans-serif;
+    color: white;
+}
+
+.contentD{
+    margin: 0 auto;
+    font-weight: bolder;
+    font-size: 21px;
+    text-align: left;
+    font-family: 'KoHo', sans-serif;
+    color: white;
+    margin-left: 152px;
+    float: left;
+    margin-top: -28px;
+}
