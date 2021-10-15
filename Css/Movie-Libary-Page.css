@@ -15,7 +15,8 @@
 
 @media only screen  and (max-width:280px){
     .header-content{
-     display: none;
+     background-image: none;
+     height: 320px;
     }
 }
 
@@ -25,9 +26,22 @@
     width: 100%;
 }
 
+@media only screen  and (max-width:1024px){
+    .navigation{
+        height: 70px;
+    width: 100%;
+    }
+}
+
 @media only screen  and (max-width:280px){
     .navigation{
-        display: none;
+        height: 40px;
+
+        border-bottom-color: white;
+        border-bottom-width: 1px ;
+        border-bottom-style: solid;  
+
+        z-index: 998;
     }
 }
 
@@ -43,19 +57,53 @@
     background-position: center;
 }
 
+@media only screen  and (max-width:1024px){
+    .logo{
+        height: 33px;
+        width: 95px;
 
-.search-navigation{
-    width: 420px;
-    height: 35px;
-    margin-left: 250px;
-    margin-top: 35px;
+        background-size: cover;
+    }
+}
 
-    border-bottom-color: white;
-    border-bottom-width: 5px ;
-    border-bottom-style: solid;
-    border-radius: 5px;
+@media only screen  and (max-width:280px){
+    .logo{
+        height: 31px;
+        width: 77px;
+    
+        float: left;
+        margin-left: 5px;
+        margin-top: 5px;
+    
+        background-image: url("../img/logo/logo.svg");
+        background-position: center;
+        background-size: cover;
 
+        display: block;
+    }
+}
+
+
+@media only screen  and (max-width:280px){
+    .search-navigation{
+    width: 68px;
+    height: 14px;
+    margin-top: 11px;
+    margin-left: 75px;
+
+    border-color: white;
+    border-width: 1px ;
+    border-style: solid;
+    border-radius: 7px;
+    
     float: left;
+    }
+}
+
+@media only screen  and (min-width:281px){
+    .search-navigation{
+    display: none;
+    }
 }
 
 .search-icon{
@@ -70,6 +118,22 @@
     float: left;
 }
 
+@media only screen  and (max-width:1024px){
+    .search-icon{
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media only screen  and (max-width:280px){
+    .search-icon{
+        width: 6px;
+        height: 6px;
+        margin-top: 4px;
+        margin-left: 2px;
+    }
+}
+
 .search{
     width: 390px;
     height: 28px;
@@ -78,6 +142,25 @@
     border: none ;
     outline: none;
     background-color: transparent;
+
+}
+
+@media only screen  and (max-width:1024px){
+    .search{
+    width: 195px;
+    height: 14px;
+    margin-top: 3px;
+    font-size: 14px;
+    }
+}
+
+@media only screen  and (max-width:280px){
+    .search{
+    width: 55px;
+    height: 14px;
+    margin-top: 0px;
+    font-size: 5px;
+    }
 }
 
 #search-1{
@@ -96,9 +179,50 @@
     float: right;
 }
 
+@media only screen  and (max-width:1024px){
+    .home{
+    height: 50px;
+    width: 50px;
+    font-size: 10px;
+    }
+}
+
+@media only screen  and (max-width:280px){
+    .home{
+    display: none;
+    }
+}
+
+
 .browse{
     height: 50px;
     width: 100px;
+    margin-top: 27px;
+    margin-right: 6%;
+
+    font-size: 24px;
+    text-align: center;
+
+    float: right;
+}
+
+@media only screen  and (max-width:1024px){
+    .browse{
+    height: 50px;
+    width: 50px;
+    font-size: 10px;
+    }
+}
+
+@media only screen  and (max-width:280px){
+    .browse{
+    display: none;
+    }
+}
+
+.watch-later{
+    height: 50px;
+    width: 150px;
     margin-top: 27px;
     margin-right: 6%;
 
@@ -113,16 +237,18 @@
     float: right;
 }
 
-.watch-later{
-    height: 50px;
-    width: 150px;
-    margin-top: 27px;
-    margin-right: 6%;
+@media only screen  and (max-width:1024px){
+    .watch-later{
+    height: 25px;
+    width: 65px;
+    font-size: 10px;
+    }
+}
 
-    font-size: 24px;
-    text-align: center;
-
-    float: right;
+@media only screen  and (max-width:280px){
+    .watch-later{
+    display: none;
+    }
 }
 
 .profile{
@@ -137,6 +263,21 @@
     float: right;
 }
 
+@media only screen  and (max-width:1024px){
+    .profile{
+    height: 50px;
+    width: 120px;
+    font-size: 10px;
+    margin-right: 1%;
+    }
+}
+
+@media only screen  and (max-width:280px){
+    .profile{
+    display: none;
+    }
+}
+
 .profile-pic{
     height: 44px;
     width: 44px;
@@ -148,6 +289,20 @@
 
     float: right;
 }
+
+@media only screen  and (max-width:1024px){
+    .profile-pic{
+    height: 25px;
+    width: 25px;
+    }
+}
+
+@media only screen  and (max-width:280px){
+    .profile-pic{
+    display: none;
+    }
+}
+
 
 .navigation a:link {
     text-decoration: none ;
@@ -163,59 +318,39 @@
     font-weight: bold ;
 }
 
-/* Navigation galaxy */
-@media screen and (max-width: 280px){
-    .logo-sm{
-     height: 30px;
-    width: 77px;
-
-    float: left;
-    margin-left: 5px;
-    margin-top: 10px;
-
-    background-image: url("../img/logo/logo.svg");
-    background-position: center;
-    background-size: cover;
-        display: block;
-    }
-}
-
-    a{
+ /* Hamburger */
+ a {
     color: #fff;
     text-decoration: none;
   }
-
-  /* Hamburger */
+  
   .p-menu1{
-      display: none;
+     height: 100%;
   }
 
-  @media screen and (max-width: 280px){
+  @media only screen  and (min-width:281px){
     .p-menu1{
-        width: 17pt;
-        height: 15pt;
-        display: block;
+    display: none;
     }
 }
   
   .hamburger1 {
-    height: 45px;
+    height: 15px;
+    margin-top: 8px;
     display: -ms-grid;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     justify-items: center;
     z-index: 120;
-
-    display: none;
     float: right;
   }
   
   .hamburger1 div {
     background-color: rgb(255, 255, 255);
     position: relative;
-    width: 40px;
-    height: 5px;
-    margin-top: 7px;
+    width: 13px;
+    height: 1.5px;
+    margin-top: 4px;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
@@ -227,13 +362,13 @@
   #toggle1:checked + .hamburger1 .top {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    margin-top: 22.5px;
+    margin-top: 10px;
   }
   
   #toggle1:checked + .hamburger1 .meat {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
-    margin-top: -5px;
+    margin-top: -2px;
   }
   
   #toggle1:checked + .hamburger1 .bottom {
@@ -242,19 +377,18 @@
   }
   
   #toggle1:checked ~ .menu1 {
-    height: 340px;
+    height: 100px;
   }
   
   
   /* Menu */
   .menu1 {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #27292F;
     margin: 0;
     display: -ms-grid;
     display: grid;
     grid-template-rows: 1fr repeat(4, 0.5fr);
-    grid-row-gap: 25px;
     padding: 0;
     list-style: none;
     clear: both;
@@ -263,51 +397,28 @@
     height: 0px;
     overflow: hidden;
     transition: height .4s ease;
-    z-index: 120;
+    z-index: 9999;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    position: relative;
   }
   
   .menu1 a:first-child {
-    margin-top: 40px;
-  }
-  
-  .menu1 a:last-child {
-    margin-bottom: 40px;
+    margin-top: 5px;
   }
   
   .link1 {
     width: 100%;
     margin: 0;
-    padding: 10px 0;
-    font: 700 20px 'Oswald', sans-serif;
+    font-size: 18px;
   }
   
-  .link1 a:hover {
+  .link1:hover {
     background-color: #fff;
     color: rgb(61, 61, 61);
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-
-    font-weight: bold ;
   }
-
-  .link1 a:link {
-    text-decoration: none ;
-    color: white ;
-  }
-
-.link1 a:visited {
-    text-decoration: none ;
-    color: white ;
-  }
-
-  @media screen and (max-width: 280px){
-    .p-menu1{
-        display: none;
-    }
-}
-
 /* Search bar */
 .search-bar{
     width: 95%;
@@ -323,7 +434,15 @@
 
 @media only screen  and (max-width:280px){
     .search-bar{
-        display: none;
+    width: 95%;
+    height: 12px;
+    margin-left: 2.5%;
+    margin-top: 8px;
+
+    border-color: none;
+    border-width: 0px ;
+    border-style: none;
+    border-radius: 0px;
     }
 }
 
@@ -339,6 +458,14 @@
     float: right;
 }
 
+@media only screen  and (max-width:280px){
+    .drop-icon{
+        width: 3px;
+        height: 3px;
+        margin-right: 3px;
+    }
+}
+
 #year{
     width: 10%;
     height: 100%;
@@ -349,6 +476,21 @@
     border-right-style: solid;
 
     float: left;
+}
+
+@media only screen  and (max-width:280px){
+    #year{
+    width: 50px;
+    height: 12px;
+    padding-left: 2px;
+    font-size: 5pt;
+    margin-right: 10px ;
+
+    border-color: white;
+    border-width: 1px ;
+    border-style: solid;
+    border-radius: 15px;
+    }
 }
 
 #rating{
@@ -363,6 +505,21 @@
     float: left;
 }
 
+@media only screen  and (max-width:280px){
+    #rating{
+        width: 50px;
+    height: 12px;
+    padding-left: 2px;
+    font-size: 5pt;
+    margin-right: 10px ;
+
+    border-color: white;
+    border-width: 1px ;
+    border-style: solid;
+    border-radius: 15px;
+    }
+}
+
 #genre{
     width: 10%;
     height: 100%;
@@ -373,6 +530,21 @@
     border-right-style: solid;
 
     float: left;
+}
+
+@media only screen  and (max-width:280px){
+    #genre{
+    width: 50px;
+    height: 12px;
+    padding-left: 2px;
+    font-size: 5pt;
+    margin-right: 10px ;
+
+    border-color: white;
+    border-width: 1px ;
+    border-style: solid;
+    border-radius: 15px;
+    }
 }
 
 .search-searchBar{
@@ -386,9 +558,21 @@
     float: left;
 }
 
+@media only screen  and (max-width:280px){
+    .search-searchBar{
+    display: none;
+    }
+}
+
 #search-2{
     float: left;
     margin-left: 5px;
+}
+
+@media only screen  and (max-width:280px){
+    #search-2{
+    display: none;
+    }
 }
 
 #search-icon-2{
@@ -404,6 +588,13 @@
     float: left;
 }
 
+
+@media only screen  and (max-width:280px){
+    #search-icon-2{
+    display: none;
+    }
+}
+
 #drop-icon-sortBy{
     float: right;
 }
@@ -411,10 +602,23 @@
 #sort-by{
     width: 10%;
     height: 100%;
-
     color: white;
 
     float: right;
+}
+
+@media only screen  and (max-width:280px){
+    #sort-by{
+    width: 50px;
+    height: 12px;
+    padding-left: 2px;
+    font-size: 5pt;
+
+    border-color: white;
+    border-width: 1px ;
+    border-style: solid;
+    border-radius: 15px;
+    }
 }
 
 .sort{
