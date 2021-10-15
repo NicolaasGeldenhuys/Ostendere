@@ -15,7 +15,7 @@
 
 @media only screen  and (max-width:280px){
     .header-content{
-     height: 465px;
+     display: none;
     }
 }
 
@@ -43,11 +43,6 @@
     background-position: center;
 }
 
-@media only screen  and (max-width:280px){
-    .logo{
-        opacity: 1;
-    }
-}
 
 .search-navigation{
     width: 420px;
@@ -169,8 +164,9 @@
 }
 
 /* Navigation galaxy */
-.logo-sm{
-    height: 30px;
+@media screen and (max-width: 280px){
+    .logo-sm{
+     height: 30px;
     width: 77px;
 
     float: left;
@@ -180,11 +176,7 @@
     background-image: url("../img/logo/logo.svg");
     background-position: center;
     background-size: cover;
-}
-
-@media screen and (min-width: 280px){
-    .logo-sm{
-        display: none;
+        display: block;
     }
 }
 
@@ -192,13 +184,21 @@
     color: #fff;
     text-decoration: none;
   }
-  
-  .p-menu1{
-     height: 100%;
-  }
-  
+
   /* Hamburger */
-  /* .hamburger1 {
+  .p-menu1{
+      display: none;
+  }
+
+  @media screen and (max-width: 280px){
+    .p-menu1{
+        width: 17pt;
+        height: 15pt;
+        display: block;
+    }
+}
+  
+  .hamburger1 {
     height: 45px;
     display: -ms-grid;
     display: grid;
@@ -246,7 +246,7 @@
   }
   
   
-  /* Menu 
+  /* Menu */
   .menu1 {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.2);
@@ -306,7 +306,7 @@
     .p-menu1{
         display: none;
     }
-}*/
+}
 
 /* Search bar */
 .search-bar{
@@ -439,17 +439,20 @@
 
 /* Content section */
 .content-container{
-    display: block;
-    overflow: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+
 }
 
 .content-block{
-    width: 190%;
     height: 435px;
     margin-left: 2.5%;
     margin-top: 80px;
 
-    float: left;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
 @media only screen and (max-width:280px){
@@ -458,6 +461,14 @@
     margin-left: 5%;
     margin-top: 0px;
     }
+}
+
+.content-block::-webkit-scrollbar {
+    display: none;
+}
+
+.content-container::-webkit-scrollbar {
+    display: none;
 }
 
 .title-sortBy{
@@ -484,8 +495,7 @@
 
     background-color: #F1B000;
     border-radius: 25px;
-
-    float: left;
+    display: inline-block;
 }
 
 @media only screen and (max-width:280px){
