@@ -21,7 +21,7 @@
             /* background-image: url("../img/jpegs/background_image.jpg");*/
             /*  background-color: #27292F;*/
             /* background-position: center;
-    background-size: auto;*/
+            background-size: auto;*/
         }
         
         @media only screen and (max-width:280px) {
@@ -535,4 +535,11 @@
             margin-left: 152px;
             float: left;
             margin-top: -28px;
+        }
+
+        .navigation{
+            font-weight: normal;
+            font-size: 64px;
+            font-family: 'Days One', sans-serif;
+            color: white;
         }
