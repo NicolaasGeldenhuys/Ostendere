@@ -491,7 +491,7 @@
     .movieInfo {
         width: 680px;
         height: 194px;
-        background-color: rgb(70, 69, 69);
+        /*background-color: rgb(70, 69, 69);*/
         margin: 0 auto;
         padding-left: 20px;
         position: absolute;
@@ -509,7 +509,7 @@
     .btnWatchLater {
         width: 297px;
         height: 57px;
-        background-color: rgb(223, 217, 217);
+        background-color: #27292F;
         text-align: center;
         border-radius: 4rem;
         padding-left: 40px;
@@ -520,7 +520,7 @@
     .btnWatchNow {
         width: 297px;
         height: 57px;
-        background-color: rgb(223, 217, 217);
+        background-color: #F1B000;
         text-align: center;
         padding-left: 40px;
         border-radius: 4rem;
@@ -581,7 +581,7 @@
     .trending {
         /* width: 1921px;*/
         height: 687px;
-        background-color: rgb(122, 121, 121);
+        background-color: #27292F;
         position: relative;
     }
     
@@ -619,7 +619,7 @@
     
     .M_scroller {
         height: 380px;
-        background-color: gray;
+        background-color: #27292F;
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;
@@ -663,7 +663,7 @@
     
     .M_WatchLater {
         height: 100px;
-        background-color: rgb(99, 98, 98);
+        background-color: #27292F;
         align-items: center;
         padding-top: 15px;
         overflow-x: scroll;
@@ -707,7 +707,7 @@
     
     .M_explore {
         height: 100px;
-        background-color: rgb(71, 71, 71);
+        background-color: #27292F;
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;
@@ -719,7 +719,7 @@
     
     .M_footer {
         height: 280px;
-        background-color: rgb(48, 47, 47);
+        background-color: #27292F;
     }
     
     .card_E_a {
@@ -755,7 +755,7 @@
     .Header_container {
         height: 22px;
         align-items: center;
-        background-color: pink;
+        background-color: #27292F;
         padding-top: 5px;
         align-items: center;
         justify-content: center;
