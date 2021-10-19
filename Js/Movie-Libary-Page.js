@@ -1,28 +1,31 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
     //like
-    console.log("This is a test.") ;
+    console.log("This is a test.");
 
-    $("#rating").click(function(){
-        $(this).attr("src","img/icons/full_heart.svg")
+    $("#rating").click(function() {
+        $(this).attr("src", "img/icons/full_heart.svg")
     });
 
     // movie api
-    $(function(){
-    var movieID = 500 ;
-    const url='https://api.themoviedb.org/3/movie/'+ movieID +'?api_key=20f38ff4b76767fa633118365643bf5d' ;
+    $(function() {
+        var movieID = 500;
+        const url = 'https://api.themoviedb.org/3/movie/' + movieID + '?api_key=20f38ff4b76767fa633118365643bf5d';
 
-    $.getJSON(url, function(result){
-        console.log(result) ;
-    
-        for(length=0; length < result.length; length++){
-            
-            var image = result[length].backdrop_path ;
-            var rating = result[length].vote_average ;
-            var title = result[length].original_title ;
+        $.getJSON(url, function(result) {
+            console.log(result);
 
-            $("#active-block").append(
-                "<div class='block'>\
+            for (i = 0; i < result.length; i++) {
+
+                var image = result.results[i].backdrop_path;
+                var rating = result.results[i].vote_average;
+                var title = result.results[i].original_title;
+                console.log(backdrop_path);
+                console.log(vote_average);
+                console.log(original_title);
+
+                $("#active-block").append(
+                    "<div class='block'>\
                 <div class= 'block-img'>\
                  <img src='" + image + "'>\
                  </div>\
@@ -34,12 +37,12 @@ $(document).ready(function(){
                 <div class='play_movie'></div>\
                 <div class='watch_later'></div>\
                 </div>\
-                </div>"    
-            );
+                </div>"
+                );
 
-            if(rating > 8){
-                $("#active-block").append(
-                     "<div class='block'>\
+                if (rating > 8) {
+                    $("#active-block").append(
+                        "<div class='block'>\
                      <div class= 'block-img'>\
                       <img src='" + image + "'>\
                       </div>\
@@ -51,12 +54,12 @@ $(document).ready(function(){
                      <div class='play_movie'></div>\
                      <div class='watch_later'></div>\
                      </div>\
-                     </div>"    
-             );
-            };
-            if(result[length].genres[length].name === "Drama"){
-               $("#drama").append(
-                    "<div class='block'>\
+                     </div>"
+                    );
+                };
+                if (result[length].genres[length].name === "Drama") {
+                    $("#drama").append(
+                        "<div class='block'>\
                     <div class= 'block-img'>\
                      <img src='" + image + "'>\
                      </div>\
@@ -68,12 +71,12 @@ $(document).ready(function(){
                     <div class='play_movie'></div>\
                     <div class='watch_later'></div>\
                     </div>\
-                    </div>"    
-            );
-           };
-           if(result[length].genres[length].name === "Fiction"){
-            $("#fiction").append(
-                 "<div class='block'>\
+                    </div>"
+                    );
+                };
+                if (result[length].genres[length].name === "Fiction") {
+                    $("#fiction").append(
+                        "<div class='block'>\
                  <div class= 'block-img'>\
                   <img src='" + image + "'>\
                   </div>\
@@ -85,12 +88,12 @@ $(document).ready(function(){
                  <div class='play_movie'></div>\
                  <div class='watch_later'></div>\
                  </div>\
-                 </div>"    
-         );
-        };
-        if(result[length].genres[length].name === "Crime"){
-            $("#mystery").append(
-                 "<div class='block'>\
+                 </div>"
+                    );
+                };
+                if (result[length].genres[length].name === "Crime") {
+                    $("#mystery").append(
+                        "<div class='block'>\
                  <div class= 'block-img'>\
                   <img src='" + image + "'>\
                   </div>\
@@ -102,12 +105,12 @@ $(document).ready(function(){
                  <div class='play_movie'></div>\
                  <div class='watch_later'></div>\
                  </div>\
-                 </div>"    
-         );
-        };
-        if(result[length].genres[length].name === "Thriller"){
-            $("#horror/thriller").append(
-                 "<div class='block'>\
+                 </div>"
+                    );
+                };
+                if (result[length].genres[length].name === "Thriller") {
+                    $("#horror/thriller").append(
+                        "<div class='block'>\
                  <div class= 'block-img'>\
                   <img src='" + image + "'>\
                   </div>\
@@ -119,12 +122,12 @@ $(document).ready(function(){
                  <div class='play_movie'></div>\
                  <div class='watch_later'></div>\
                  </div>\
-                 </div>"    
-         );
-        };
-        if(result[length].genres[length].name === "Western"){
-            $("#western").append(
-                 "<div class='block'>\
+                 </div>"
+                    );
+                };
+                if (result[length].genres[length].name === "Western") {
+                    $("#western").append(
+                        "<div class='block'>\
                  <div class= 'block-img'>\
                   <img src='" + image + "'>\
                   </div>\
@@ -136,12 +139,12 @@ $(document).ready(function(){
                  <div class='play_movie'></div>\
                  <div class='watch_later'></div>\
                  </div>\
-                 </div>"    
-         );
-        };
-        if(result[length].genres[length].name === "History"){
-            $("#historical").append(
-                 "<div class='block'>\
+                 </div>"
+                    );
+                };
+                if (result[length].genres[length].name === "History") {
+                    $("#historical").append(
+                        "<div class='block'>\
                  <div class= 'block-img'>\
                   <img src='" + image + "'>\
                   </div>\
@@ -153,12 +156,12 @@ $(document).ready(function(){
                  <div class='play_movie'></div>\
                  <div class='watch_later'></div>\
                  </div>\
-                 </div>"    
-         );
-        };
-        if(result[length].genres[length].name === "Fantasy"){
-            $("#fantasy").append(
-                 "<div class='block'>\
+                 </div>"
+                    );
+                };
+                if (result[length].genres[length].name === "Fantasy") {
+                    $("#fantasy").append(
+                        "<div class='block'>\
                  <div class= 'block-img'>\
                   <img src='" + image + "'>\
                   </div>\
@@ -170,12 +173,12 @@ $(document).ready(function(){
                  <div class='play_movie'></div>\
                  <div class='watch_later'></div>\
                  </div>\
-                 </div>"    
-         );
-        };
-        if(result[length].genres[length].name === "Action"){
-            $("#action").append(
-                 "<div class='block'>\
+                 </div>"
+                    );
+                };
+                if (result[length].genres[length].name === "Action") {
+                    $("#action").append(
+                        "<div class='block'>\
                  <div class= 'block-img'>\
                   <img src='" + image + "'>\
                   </div>\
@@ -187,12 +190,12 @@ $(document).ready(function(){
                  <div class='play_movie'></div>\
                  <div class='watch_later'></div>\
                  </div>\
-                 </div>"    
-         );
-        };
-        if(result[length].genres[length].name === "Adventure"){
-            $("#adventure").append(
-                 "<div class='block'>\
+                 </div>"
+                    );
+                };
+                if (result[length].genres[length].name === "Adventure") {
+                    $("#adventure").append(
+                        "<div class='block'>\
                  <div class= 'block-img'>\
                   <img src='" + image + "'>\
                   </div>\
@@ -204,12 +207,12 @@ $(document).ready(function(){
                  <div class='play_movie'></div>\
                  <div class='watch_later'></div>\
                  </div>\
-                 </div>"    
-         );
-        };
-        if(result[length].genres[length].name === "Comedy"){
-            $("#comedy").append(
-                 "<div class='block'>\
+                 </div>"
+                    );
+                };
+                if (result[length].genres[length].name === "Comedy") {
+                    $("#comedy").append(
+                        "<div class='block'>\
                  <div class= 'block-img'>\
                   <img src='" + image + "'>\
                   </div>\
@@ -221,14 +224,14 @@ $(document).ready(function(){
                  <div class='play_movie'></div>\
                  <div class='watch_later'></div>\
                  </div>\
-                 </div>"    
-         );
-        };
+                 </div>"
+                    );
+                };
 
-          movieID ++ ;
-        
-        };
-    
+                movieID++;
+
+            };
+
+        });
     });
-});
 });

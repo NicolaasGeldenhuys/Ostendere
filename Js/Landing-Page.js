@@ -1,43 +1,61 @@
 $(function() {
     console.log('I see You');
 
-    const url = 'https://api.themoviedb.org/3/movie/top_rated?api_key=20f38ff4b76767fa633118365643bf5d&language=en-US&page=1';
+    const P_url = 'https://api.themoviedb.org/3/movie/top_rated?api_key=20f38ff4b76767fa633118365643bf5d&language=en-US&page=1';
 
-    $.getJSON(url, function(result) {
-        console.log(result);
-        for (i = 0; i < result.length; i++) {
-            console.log(result[i].page.results.id);
-            //console.log(result[i].page.results.title);
-            $(".slider").append(
-                "<ul class='slides'>\
-                     <li class='slide'><img src='" + result[i].backdrop_path + "' alt=''></li>\
-                     <li class='slide'><img src='' alt=''></li>\
-                     <li class='slide'><img src='' alt=''></li>\
-                     <li class='slide'><img src='' alt=''></li>\
-                     <li class='slide'><img src='' alt=''></li>\
-                     </ul>\
-                <div class='movieInfo'>\
-                    <h1>" + result[i].page.results.title + "</h1>\
-                     <p class='synopsis'>synopsis:" + result[i].overview + "</p>\
-                         <div class='btnContainer'>\
-                             <div class='btnWatchLater'>\
-                                 <h2>Watch Later</h2>\
-                            </div>\
-                             <!--btnWatchLater-->\
-                                <div class='btnWatchNow'>\
-                                     <h2>Watch Now</h2>\
-                                 </div>\
-                                    <!--btnWatchNow-->\
-                            </div>\
-                            <!--btnContainer-->\
+    $.getJSON(P_url, function(P_Movie) {
+
+        console.log(P_Movie.results.length);
+
+        console.log("For loop is going to start");
+        //console.log(P_Movie.length);
+        for (i = 0; i < P_Movie.results.length; i++) {
+            console.log("For loop is running");
+            // console.log(i);
+            console.log(P_Movie.results[i].title);
+
+
+            //     console.log(result[i].page.results.title);
+            //    $(".slider").append(
+            //        "<ul class='slides'>\
+            //            <li class='slide'><img src='' alt=''></li>\
+            //          <li class='slide'><img src='' alt=''></li>\
+            //          <li class='slide'><img src='' alt=''></li>\
+            //           <li class='slide'><img src='' alt=''></li>\
+            //          <li class='slide'><img src='' alt=''></li>\
+            //          </ul>\
+            //      <div class='movieInfo'>\
+            //          <h1></h1>\
+            //        <p class='synopsis'>synopsis:" + P_Movie.results[i].overview + "</p>\
+            //              <div class='btnContainer'>\
+            //                  <div class='btnWatchLater'>\
+            //                      <h2>Watch Later</h2>\
+            //                 </div>\
+            //                  <!--btnWatchLater-->\
+            //                  <div class='btnWatchNow'>\
+            //                        <h2>Watch Now</h2>\
+            //                       </div>\
+            //                          <!--btnWatchNow-->\
+            //               </div>\
+            //                <!--btnContainer-->\
+            //   </div>\
+            //    <!--movieInfo-->"
+            //     );
+
+            //  console.log("I have appended slider");
+            $(".trending").append(
+                "<div class='item'>\
+                <div class='movie'>\
+                <img src=' " + P_Movie.results[i].backdrop_path + " ' alt=' '>\
                 </div>\
-                <!--movieInfo-->"
+                    </div>"
             );
-            console.log("I have appended slider");
+            console.log(P_Movie.results[i].backdrop_path);
+            console.log(P_Movie.results[i].poster_path);
 
 
-
-        };
+        }
+        console.log("For loop is done");
     });
 
 
