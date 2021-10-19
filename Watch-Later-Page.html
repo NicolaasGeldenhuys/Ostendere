@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- your metadata -->
+    <meta name="assignment" content="Term 4 project">
+    <meta name="author" content="Cornel van der Vyver">
+    <meta name="studentnumber" content="21100288">
+    <meta name="lecturer" content="Mike">
+    <meta name="Subject" content="DV100_T3">
+    <!-- title -->
+    <title>Movie Libary Page</title>
+    <!-- css styles -->
+    <link rel="stylesheet" href="../Css/Watch-Later-Page.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- own jQuery code -->
+    <script src="../Js/Watch-Later-Page.js"></script>
+    <!--css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Container-->
+<div class="container-fluid">
+<div class="content-box">
+
+    <!--Navigation-->
+<div class="navigation">
+    <div class="logo"></div>
+
+    <div class="search-navigation">
+    <div class="search-icon"></div>
+    <input class="search" id="search-1" type="text" placeholder="Search...">
+    </div>
+
+    <div class="profile">
+    <a id="name" href="Watch-Later-Page.html">Welcome Mike, M</a>
+    <div class="profile-pic"></div>
+    </div>
+
+    <div class="watch-later"><a href="Watch-Later-Page.html">Watch later</a></div>
+    <div class="browse"><a href="Movie-Libary-Page.html">Browse</a></div>
+    <div class="home"><a href="Landing-Page.html">Home</a></div>
+
+    <!-- Burger dropdown-->
+    <section class="p-menu1">
+        <nav id="navbar" class="navigation" role="navigation">
+          <input id="toggle1" type="checkbox" />
+          <label class="hamburger1" for="toggle1">
+            <div class="top"></div>
+            <div class="meat"></div>
+            <div class="bottom"></div>
+          </label>
+        
+          <nav class="menu1">
+            <a class="link1" href="Landing-Page.html">Home</a>
+            <a class="link1" href="Movie-Libary-Page.html">Browse</a>
+            <a class="link1" href="Watch-Later-Page.html">Watch later</a>
+
+          </nav>
+      </nav>
+      </section>
+
+</div>
+    <!-- Active movie -->
+    <div class="active-movie">
+    <div class="play_button"></div>
+    </div>
+
+    <!-- Next movies -->
+    <div class="next-movies-containner-title">Watch Later</div>
+    <div class="next-movies-containner">
+        <div class="block">
+            <div id="rating">
+                <!--(api)-->
+            </div>
+            <div class="like"></div>
+    
+            <div class="info_box">
+            <div class="movie_name">Shrek 2</div>
+            <div class="play_movie"></div>
+            <div class="watch_later"></div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div id="rating">
+                <!--(api)-->
+            </div>
+            <div class="like"></div>
+    
+            <div class="info_box">
+            <div class="movie_name">Shrek 2</div>
+            <div class="play_movie"></div>
+            <div class="watch_later"></div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div id="rating">
+                <!--(api)-->
+            </div>
+            <div class="like"></div>
+    
+            <div class="info_box">
+            <div class="movie_name">Shrek 2</div>
+            <div class="play_movie"></div>
+            <div class="watch_later"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Movie discriptoin section -->
+    <div class="synopsis">
+        Synopsis
+        <div class="sunopsis-body">This is test text and nothing else ;-;</div>
+    </div>
+
+    <div class="information-container">
+    <div class="cast">
+        Cast
+        <div class="cast-body">Chris Pratt</div>
+    </div>
+    <div class="directors">
+        Directors
+        <div class="directors-body">P. Jackson</div>
+    </div>
+    </div>
+
+
+</div>
+</div>
+</body> 
+</html>
