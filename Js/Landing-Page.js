@@ -13,7 +13,8 @@ $(function() {
             console.log("For loop is running");
             // console.log(i);
             console.log(P_Movie.results[i].title);
-
+            var poster = "https://image.tmdb.org/t/p/w500/" + P_Movie.results[i].poster_path
+                // console.log(poster);
 
             //     console.log(result[i].page.results.title);
             //    $(".slider").append(
@@ -42,16 +43,14 @@ $(function() {
             //    <!--movieInfo-->"
             //     );
 
-            //  console.log("I have appended slider");
-            $(".trending").append(
-                "<div class='item'>\
-                <div class='movie'>\
-                <img src=' " + P_Movie.results[i].backdrop_path + " ' alt=' '>\
-                </div>\
-                    </div>"
+            console.log("I have appended slider");
+            $(".item").append(
+                "<div class='movie'>\
+                <img style='height: 400px; width:700px; ' src=' " + poster + " ' alt=' '>\
+                </div>"
             );
-            console.log(P_Movie.results[i].backdrop_path);
-            console.log(P_Movie.results[i].poster_path);
+            //console.log(P_Movie.results[i].backdrop_path);
+            // console.log(P_Movie.results[i].poster_path);
 
 
         }
