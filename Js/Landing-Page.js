@@ -7,54 +7,50 @@ $(function() {
 
         console.log(P_Movie.results.length);
 
-        console.log("For loop is going to start");
+        // console.log("For loop is going to start");
         //console.log(P_Movie.length);
-        for (i = 0; i < P_Movie.results.length; i++) {
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (min - max)) + min;
+        }
+        for (i = 0; i <= getRndInteger(5, 5); i++) {
             console.log("For loop is running");
             // console.log(i);
-            console.log(P_Movie.results[i].title);
-            var poster = "https://image.tmdb.org/t/p/w500/" + P_Movie.results[i].poster_path
-                // console.log(poster);
+            // console.log(P_Movie.results[i].title);
+            var poster = ' https://image.tmdb.org/t/p/w500/' + P_Movie.results[i].poster_path;
+            var backdrop = ' https://image.tmdb.org/t/p/w500/' + P_Movie.results[i].backdrop_path;
+            var TitleOfMovie = P_Movie.results[i].title;
+            var synopsisOfMovie = P_Movie.results[i].overview;
+            // $(".slides").append(
+            //     " <li class='slide'>\
+            //      <img src='" + backdrop + "' alt='backdrop_path" + TitleOfMovie + ".jpg' class='SlideImg'>\
+            //     <div class='movieInfo'>\
+            //         <h1>'" + TitleOfMovie + "'</h1>\
+            //         <p class='synopsis'>synopsis:'" + synopsisOfMovie + "' </p>\
+            //         <div class='btnContainer'>\
+            //             <div class='btnWatchLater'>\
+            //                 <h2>Watch Later</h2>\
+            //             </div>\
+            //             <!--btnWatchLater-->\
+            //             <div class='btnWatchNow'>\
+            //                 <h2>Watch Now</h2>\
+            //             </div>\
+            //             <!--btnWatchNow-->\
+            //         </div>\
+            //         <!--btnContainer-->\
+            //     </div>\
+            //     <!--movieInfo-->"
+            // );
 
-            //     console.log(result[i].page.results.title);
-            //    $(".slider").append(
-            //        "<ul class='slides'>\
-            //            <li class='slide'><img src='' alt=''></li>\
-            //          <li class='slide'><img src='' alt=''></li>\
-            //          <li class='slide'><img src='' alt=''></li>\
-            //           <li class='slide'><img src='' alt=''></li>\
-            //          <li class='slide'><img src='' alt=''></li>\
-            //          </ul>\
-            //      <div class='movieInfo'>\
-            //          <h1></h1>\
-            //        <p class='synopsis'>synopsis:" + P_Movie.results[i].overview + "</p>\
-            //              <div class='btnContainer'>\
-            //                  <div class='btnWatchLater'>\
-            //                      <h2>Watch Later</h2>\
-            //                 </div>\
-            //                  <!--btnWatchLater-->\
-            //                  <div class='btnWatchNow'>\
-            //                        <h2>Watch Now</h2>\
-            //                       </div>\
-            //                          <!--btnWatchNow-->\
-            //               </div>\
-            //                <!--btnContainer-->\
-            //   </div>\
-            //    <!--movieInfo-->"
-            //     );
-
-            console.log("I have appended slider");
+            console.log(poster);
             $(".item").append(
-                "<div class='movie'>\
-                <img style='height: 400px; width:700px; ' src=' " + poster + " ' alt=' '>\
-                </div>"
+                "<div class='movie'><img scr='" + poster + "' alt='poster of the move " + TitleOfMovie + "' class='ItemMovieImg'></div>"
             );
-            //console.log(P_Movie.results[i].backdrop_path);
-            // console.log(P_Movie.results[i].poster_path);
+
+
 
 
         }
-        console.log("For loop is done");
+
     });
 
 
@@ -74,21 +70,22 @@ $(function() {
 
 
 
-    var currentSlide = 1;
+    var currentSlide = 0;
     var $slides = $('.slides');
     var slideCounter = $slides.children().length;
     var animateTime = 800;
     var slideTime = 5000;
 
-    //console.log(slideCounter);
 
     setInterval(function() {
+        console.log(slideCounter + " slideCounter");
         $slides.animate({ marginLeft: '-=900px' }, animateTime, function() {
             currentSlide++;
-            if (currentSlide === slideCounter) {
+            if (currentSlide === slideCounter + 1) {
                 currentSlide = 1;
                 $(this).css("margin-left", "0px")
             }
+            console.log(" currentSlide " + currentSlide);
         });
         console.log("going to change")
     }, slideTime);
