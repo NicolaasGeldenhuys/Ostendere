@@ -10,19 +10,24 @@ $(document).ready(function() {
     // movie api
     $(function() {
         var movieID = 500;
-        const url = 'https://api.themoviedb.org/3/movie/' + movieID + '?api_key=20f38ff4b76767fa633118365643bf5d';
+        // const url = 'https://api.themoviedb.org/3/movie/' + movieID + '?api_key=20f38ff4b76767fa633118365643bf5d';
+        const TopRatedMoviesUrl = 'https://api.themoviedb.org/3/movie/top_rated?api_key=20f38ff4b76767fa633118365643bf5d&language=en-US&page=1';
+        const PopulareMoviesUrl = 'https://api.themoviedb.org/3/movie/popular?api_key=20f38ff4b76767fa633118365643bf5d&language=en-US&page=1';
 
-        $.getJSON(url, function(result) {
+
+        $.getJSON(PopulareMoviesUrl, function(result) {
             console.log(result);
+            console.log("see me");
 
-            for (i = 0; i < result.length; i++) {
+            for (i = 0; i < result.results.length; i++) {
 
-                var image = result.results[i].backdrop_path;
+                var image = 'https://image.tmdb.org/t/p/w500/' + result.results[i].backdrop_path;
                 var rating = result.results[i].vote_average;
                 var title = result.results[i].original_title;
-                console.log(backdrop_path);
-                console.log(vote_average);
-                console.log(original_title);
+
+                console.log(image);
+                console.log(rating);
+                console.log(title);
 
                 $("#active-block").append(
                     "<div class='block'>\
