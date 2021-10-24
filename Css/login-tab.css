@@ -38,6 +38,8 @@ body{
     margin-left: 253px;
 }
 
+
+
 .left{
     width: 50%;
     height: 800px;
@@ -252,7 +254,6 @@ LABEL.indented-checkbox-text
 
 .apple{
     float: right;
-    
     cursor: pointer;
     margin-top: -43px;
 }

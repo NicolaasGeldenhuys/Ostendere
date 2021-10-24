@@ -9,6 +9,11 @@ body{
 }
 
 .container{
+    display: none;
+    opacity: 0;
+}
+
+.container1{
     margin: 0 auto;
     width: 1363px;
     height: 800px;
@@ -42,6 +47,7 @@ body{
     position: relative;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 24px;
+    
 }
 
 .panel{
@@ -145,6 +151,7 @@ input{
     border: none;
 }
 
+
 .submitbtn:hover{
     transform: scale(1.025);
     cursor: pointer;
@@ -222,6 +229,8 @@ LABEL.indented-checkbox-text
     display: none;
   }
   
+  
+
   /* Show the checkmark when checked */
   .containercheckbox input:checked ~ .checkmark:after {
     display: block;
@@ -246,6 +255,7 @@ LABEL.indented-checkbox-text
       background-size: cover;
       background-position: center;
       margin-left: 10px;
+  
       
   }
 
@@ -283,4 +293,682 @@ LABEL.indented-checkbox-text
     position: absolute;
     margin-left: -160px;
     margin-top: 144px;
+}
+
+#login_ipad{
+    display: none;
+}
+
+#login_mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    body{
+        margin: 0 auto;
+        padding: 0;
+        background-image: url("../img/jpegs/Ipadloginbg.png");
+        background-size: cover;
+        background-position: center;
+        width: 1024px;
+        height: 768px;
+    }
+    
+    form{
+        margin-top: 0px;
+    }
+
+    .container1{
+        opacity: 0;
+        display: none;
+    }
+
+    .container{
+        margin: 0 auto;
+        width: 519.24px;
+        height: 550px;
+        background-color: #27292F;
+        box-shadow: 8px 5px 26px -11px rgba(0,0,0,0.31);
+        -webkit-box-shadow: 8px 5px 26px -11px rgba(0,0,0,0.31);
+        -moz-box-shadow: 8px 5px 26px -11px rgba(0,0,0,0.31);
+        border: #ffffff solid 5px;
+        position: relative;
+        border-radius: 20px;
+        margin-top: 79px;
+        margin-left: 253px;
+        display: inline-block;
+        opacity: 1;
+    }
+    
+    .container2{
+        margin: 0 auto;
+        width: 519.24px;
+        height: 700px;
+        background-color: #27292F;
+        box-shadow: 8px 5px 26px -11px rgba(0,0,0,0.31);
+        -webkit-box-shadow: 8px 5px 26px -11px rgba(0,0,0,0.31);
+        -moz-box-shadow: 8px 5px 26px -11px rgba(0,0,0,0.31);
+        border: #ffffff solid 5px;
+        position: relative;
+        border-radius: 20px;
+        margin-top: 79px;
+        margin-left: 253px;
+
+        
+    }
+    
+    /* .left{
+        width: 50%;
+        height: 800px;
+        text-align: center;
+        float: left;
+        color: #27292F;
+        position: relative;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24px;
+    } */
+    
+    .right{
+        width: 50%;
+        height: 800px;
+        text-align: center;
+        float: left;   
+        color: #27292F;
+        position: relative;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24px;
+    }
+    
+    
+    .logoLogin{
+       
+        position:absolute;
+        margin-left: -119px;
+        margin-top: 33px;
+        /* Fix centering of logo */
+    }
+    
+    
+    
+    /* ///////////////////// */
+    .form-container{
+        text-align: center;
+        width: 519.24px;
+        height: 666px;
+        margin: 0 auto;   
+        margin-top: 66px;
+        color: white;
+    }
+    
+    .form-container2{
+        text-align: center;
+        width: 519.24px;
+        height: 609.7px;
+        margin: 0 auto;   
+        margin-top: 66px;
+        color: white;
+        display: inline-block;
+        opacity: 1;
+    }
+    
+    input{
+        width: 447px;
+        height: 43.33px;
+        border: solid 2px white;
+        background-color: transparent;
+        border-radius: 40px;
+        padding-left: 15px;
+        margin-top: 26px;
+        color: white;
+        margin-left: 5px;
+    }
+    
+    .submitbtn{
+        width: 462.22px;
+        height: 43.1px;
+        background-color: #F1B000;
+        color: #f7f7f7;
+        margin:  0 auto;
+        margin-top: 26px;
+        border-radius: 40px;
+        font-size: 20.21px;
+        font-weight: 300 !important;
+        transition: all ease 200ms;
+        font-family: 'Days One', sans-serif;
+        border: none;
+        margin-left: 5px;
+    }
+    .submitbtn:hover{
+        transform: scale(1.025);
+        cursor: pointer;
+    }
+    
+    #signuptitle{
+        font-family: 'Days One', sans-serif;
+        font-size: 41px;
+        font-weight: normal;
+    }
+    
+    LABEL.indented-checkbox-text
+    {
+      margin-left: 85px;
+      display: block;
+      position: relative;
+      margin-top: -1.4em;  /* make this margin match whatever your line-height is */
+      line-height: 1.4em;  /* can be set here, or elsewehere */
+      font-family: 'KoHo', sans-serif;
+        font-size: 20.21px;
+        font-weight: normal;
+    }
+    
+    /* Customize the label (the container) */
+    .containercheckbox {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin-top: 100px;
+        padding-top: 27px;
+        margin-left: -170px;
+        position: absolute;
+      }
+      
+      .indented-checkbox-text2{
+          position: relative;
+      }
+    
+      /* Hide the browser's default checkbox */
+      .containercheckbox input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      
+      /* Create a custom checkbox */
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        border: solid 2px white;
+        border-radius: 100px;
+        margin-left: 170px;
+      }
+      
+      /* On mouse-over, add a grey background color */
+      .containercheckbox:hover input ~ .checkmark {
+        background-color: #F1B000;
+      }
+      
+      /* When the checkbox is checked, add a blue background */
+      .containercheckbox input:checked ~ .checkmark {
+        background-color: #F1B000;
+      }
+      
+      /* Create the checkmark/indicator (hidden when not checked) */
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      
+      /* Show the checkmark when checked */
+      .containercheckbox input:checked ~ .checkmark:after {
+        display: block;
+      }
+      
+      /* Style the checkmark/indicator */
+      .containercheckbox .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    
+      .socialsTab{
+          width: 464px;
+          height: 37px;
+          margin-top: 33px;
+          background-size: cover;
+          background-position: center;
+          margin-left: 10px;
+          float: right;
+          margin-right: 27px;
+      }
+    
+      .fbook{
+          float: left;
+          cursor: pointer;
+          margin-right: 200px;
+          margin-top: -10px;
+      }
+    
+      .twitter{
+        float: left;
+        margin-right: 136px;
+        cursor: pointer;
+        margin-top: -38px;
+    }
+    
+    .google{
+        float: left;
+        margin-left: 275px;
+        cursor: pointer;
+        margin-top: -36px;
+    }
+    
+    .apple{
+        float: right;
+        margin-right: -5px;
+        cursor: pointer;
+        margin-top: -38px;
+    }
+    
+    ::placeholder{
+        color: lightgray;
+        font-family: 'KoHo', sans-serif;
+        font-size: 15.37px;
+        font-weight: bolder;
+    }
+    
+    .camImg{
+        position: absolute;
+        margin-left: -160px;
+        margin-top: 144px;
+    }
+    
+    .loginoption{
+        height: 27px;
+        width: 284px;
+        margin: 0 auto;
+        margin-top: 43.33px; 
+       
+    }
+    
+    .logintabbtn2:hover{
+        /* transform: scale(1.025); */
+        background-color: white;
+        cursor: pointer;
+        color: #27292F;
+    }
+
+    .logintabbtn:hover{
+        color: #27292F;
+        background-color: white;
+    }
+    
+    .signtabbtn:hover{
+        color: #27292F;
+        background-color: white;
+    }
+    
+    
+    #alreadyAccount-tab{
+        color: white;
+        font-size: 15.36px;
+        font-family: 'KoHo', sans-serif;
+        font-weight: normal;
+        text-align: left;
+        margin-top: 22px;
+    }
+    
+    .logintabbtn2{
+        width: 95.11px;
+        height: 26.52px;
+        font-family: 'Days One', sans-serif;
+        font-weight: normal;
+        font-size: 9.46px;
+        text-align: center;
+        border-radius: 18.71px;
+        float: right;
+        margin-top: -40px;
+        border: solid 2px white;
+        cursor: pointer;
+    }
+    
+    .logintabbtn p{
+       
+        margin-top: 8px;
+        
+    }
+    
+    .signtabbtn{
+        width: 95.11px;
+        height: 26.52px;
+        font-family: 'Days One', sans-serif;
+        font-weight: normal;
+        font-size: 9.46px;
+        text-align: center;
+        border-radius: 18.71px;
+        float: right;
+        margin-top: -40px;
+        border: solid 2px white;
+        cursor: pointer;
+        
+    }
+    
+    .signtabbtn p{
+       
+        margin-top: 8px;
+        
+    }
+    
+    #socialsText{
+        font-size: 15.64px;
+        font-family: 'KoHo', sans-serif;
+        color: white;
+        font-weight: normal;
+        text-align: left;
+        margin-top: -25px;
+        ;
+    }
+    
+    .checkbox-contain{
+        margin: 0 auto;
+        width: 300px;
+        height: 45px;
+        margin-top: 25px;
+       margin-right: 55px;
+    }
+
+    .panel{
+        opacity: 0;
+        display: none;
+    }
+
+    .logoLogin{
+        opacity: 0;
+        display: none;
+    }
+
+    .btn{
+        opacity: 0;
+        display: none;
+    }
+
+    .btn2{
+        opacity: 0;
+        display: none;
+    }
+
+    .loginIntro{
+        opacity: 0;
+        display: none;
+    }
+
+    .camImg{
+        opacity: 0;
+        display: none;
+    }
+
+   .right{
+    width: 50%;
+    height: 800px;
+    text-align: center;
+    float: left;   
+    color: #27292F;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    margin-top: -60px;
+}
+
+@media only screen and (max-width:280px) {
+    body{
+        margin: 0 auto;
+        padding: 0;
+        background-image: url("../img/jpegs/Foldbg.png");
+        background-size: cover;
+        background-position: center;
+        width: 280px;
+        height: 653px;
+    }
+    
+    .container{
+        width: 238px;
+        height: 400px;
+        background-color: #27292F;
+        float: left;
+        border: white solid 2px;
+        border-radius: 20px;
+        margin-top: 133px;
+        margin-left: 21px;
+    }
+    
+    .container2{
+        width: 238px;
+        height: 460px;
+        background-color: #27292F;
+        float: left;
+        border: white solid 2px;
+        border-radius: 20px;
+        margin-top: 207px;
+        margin-left: 21px;
+    }
+    
+    #signuptitle{
+        width: 100%;
+        float: left;
+        font-family: 'Days One', sans-serif;
+        font-size: 22.13px;
+        font-weight: normal;
+        text-align: center;
+        color: white;
+        margin-top: 61px;
+        
+    }
+    
+    
+    input{
+        width: 194px;
+        height: 27px;
+        border: solid 1.52px white;
+        background-color: transparent;
+        border-radius: 30.45px;
+        padding-left: 15px;
+        margin-top: 22px;
+        color: white;
+        margin-left: 5px;
+        font-family: 'KoHo', sans-serif;
+    }
+    
+    .info{
+        margin-top: -60px;
+    }
+    
+    .keeploggedbtn{
+        width: 209px;
+        height: 27px;
+        border: solid 1.52px white;
+        background-color: #962424;
+        border-radius: 30.45px;
+        margin-top: 10px;
+        color: white;
+        margin-left: 11px;
+        cursor: pointer;
+    }
+    
+    .keeploggedbtntog{
+        width: 209px;
+        height: 27px;
+        border: solid 1.52px white;
+        background-color: #4F9624;
+        border-radius: 30.45px;
+        margin-top: 10px;
+        color: white;
+        margin-left: 11px;
+        cursor: pointer;
+    }
+    
+    p{
+        text-align: center;
+        font-family: 'KoHo', sans-serif;
+        font-size: 8.74px;
+        font-weight: normal;
+        color: white;
+    }
+    
+    .socialsTab{
+        width: 214px;
+        height: 29.14px;
+        margin-top: 22px;
+        background-size: cover;
+        background-position: center;
+        float: left;
+        margin-left: 15px;
+    }
+    
+    .twitter{
+        margin-left: 22px;
+    }
+    
+    .google{
+        margin-left: 22px;
+    }
+    
+    .apple{
+        margin-left: 22px;
+    }
+    
+    .submitbtn{
+        width: 209px;
+        height: 29.84px;
+        background-color: #F1B000;
+        border-radius: 21.05px;
+        margin-top: 22px;
+        color: white;
+        margin-left: 0px;
+    }
+    
+    .loginoption{
+        height: 16px;
+        width: 209px; 
+        margin: 0 auto;
+        margin-top: -4px; 
+    }
+    
+    .alreadyAccount-tab{
+        color: white;
+        font-size: 10px;
+        font-family: 'KoHo', sans-serif;
+        font-weight: normal;
+        text-align: left;
+        margin-top: 22px;
+    }
+    
+    .signtabbtn{
+        width: 45.11px;
+        height: 16px;
+        font-family: 'Days One', sans-serif;
+        font-weight: normal;
+        font-size: 5px;
+        text-align: center;
+        border-radius: 8.88px;
+        float: right;
+        margin-top: -34px;
+        border: solid 2px white;
+        cursor: pointer;
+    }
+    
+    .signtabbtn p{
+       
+        margin-top: 1px;
+        
+    }
+    
+    .logintabbtn{
+        width: 45.11px;
+        height: 16px;
+        font-family: 'Days One', sans-serif;
+        font-weight: normal;
+        font-size: 5px;
+        text-align: center;
+        border-radius: 8.88px;
+        float: right;
+        margin-top: -35px;
+        border: solid 2px white;
+        cursor: pointer;
+    }
+    
+    .logintabbtn p{
+       
+        margin-top: 1px;
+        
+    }
+    
+    ::placeholder{
+        color: gray;
+        font-family: 'KoHo', sans-serif;
+       
+        font-weight: bolder;
+    }
+    
+    .submitbtn:hover{
+        transform: scale(1.025);
+        cursor: pointer;
+    }
+
+    form{
+        width: 240px;
+        height: 410px;
+        margin-top: -68px;
+        margin-left: -1px;
+    }
+
+    .form-container2{
+        text-align: center;
+        width: 242px;
+        height: 411px;
+        margin: 0 auto;   
+        color: white;
+        display: inline-block;
+        opacity: 1;
+    }
+
+    .fbook{
+        float: left;
+        cursor: pointer;
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+  
+    .twitter{
+      float: left;
+      margin-left: 60px;
+      cursor: pointer;
+      margin-top: -30px;
+  }
+  
+  .google{
+      float: left;
+      margin-left: 115px;
+      cursor: pointer;
+      margin-top: -30px;
+  }
+  
+  .apple{
+      float: left;
+      margin-left: 170px;
+      cursor: pointer;
+      margin-top: -30px;
+  }
+}
+    
+ 
+
+
 }

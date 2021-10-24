@@ -28,4 +28,14 @@ $(function(){
         $(".keeploggedbtn").on("click", function(){
             $(this).toggleClass("keeploggedbtntog");
         });
+
+        $(".signtabbtn").on("click", function(){
+            $("form").css("margin-top", "30px");
+            
+        });
+
+        $(".logintabbtn").on("click", function(){
+            $("form").css("margin-top", "-68px");
+            
+        });
 });

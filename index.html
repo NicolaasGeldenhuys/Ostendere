@@ -10,17 +10,23 @@
     <!-- CSS -->
     <link rel="stylesheet" href="Css/login.css">
     <!-- JS -->
-    <script src="../Ostendere/Js/login.js"></script>;
+    <script src="../Ostendere/Js/login.js"></script>
+    <script src="../Ostendere/Js/login-tab.js"></script>
+    <script src="../Ostendere/Js/login-mob.js"></script>
    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Days+One&family=KoHo:wght@600&display=swap" rel="stylesheet">
 
+
    <title>Ostendere</title>
 </head>
 <body>
     
-    <div class="container">
+    <!--                                                              Desktop -->
+
+
+    <div class="container1">
         <div class="left">
             <div class="form-container">
                 <form autocomplete="on">
@@ -58,11 +64,7 @@
                     <input type="password" placeholder="Select a Password" pattern="(?=.*\d) (?=.*[a-z]) (?=.*[A-Z]).{8,}" title="Your password must include a digit, lowercase and uppercase characters and a minimum of 8 characters." required>
                     <input type="password" placeholder="Confirm Password" required>
 
-                    <!-- <label class="containercheckbox">
-                    <input for="myinput" type="checkbox" required>
-                    <span  class="checkmark"></span>
-                    <label for="myinput" class="indented-checkbox-text">Keep me logged in</label>
-                    </label> -->
+                   
                     
                     
                     <input type="submit" class="submitbtn" value="Sign Up">
@@ -86,6 +88,79 @@
 
     </div>
    <!-- end of container -->
+
+    <!--                                                                            Tablet -->
+
+   <div class="container">
+    <div class="left">
+        <div class="form-container">
+            <form autocomplete="on">
+                <h3 id="signuptitle">Log In</h3>
+                <input type="email" placeholder="Your Email" required> 
+                <input type="password" placeholder="Select a Password" pattern="(?=.*\d) (?=.*[a-z]) (?=.*[A-Z]).{8,}" title="Your password must include a digit, lowercase and uppercase characters and a minimum of 8 characters." required>
+               
+            
+                <div class="socialsTab">
+                    
+                    <img class="fbook" src="../Ostendere/img/icons/fbook.svg"  height="29px" width="29px">
+                    <img class="twitter" src="../Ostendere/img/icons/twitter.svg"  height="29px" width="29px">
+                    <img class="google" src="../Ostendere/img/icons/google.svg"  height="29px" width="29px">
+                    <img class="apple" src="../Ostendere/img/icons/Apple.svg"  height="29px" width="29px">    
+                </div>
+
+                
+              
+               
+                <input type="submit" class="submitbtn" value="Log In">
+
+                <div class="loginoption">
+                    <p id="alreadyAccount-tab">Don't have an account?</p>
+                    <div class="signtabbtn"><p>Sign Up</p></div>
+                </div>
+                
+            </form>
+        </div><!--form-container--> 
+    </div>
+</div>
+
+
+
+
+
+<div class="container2">
+    <div class="right">
+        <div class="form-container2">
+            <form autocomplete="on">
+                <h3 id="signuptitle">Sign Up</h3>
+                <input type="text" placeholder="First Name" autofocus required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Your Email" required> 
+                <input type="password" placeholder="Select a Password" pattern="(?=.*\d) (?=.*[a-z]) (?=.*[A-Z]).{8,}" title="Your password must include a digit, lowercase and uppercase characters and a minimum of 8 characters." required>
+                <input type="password" placeholder="Confirm Password" required>
+
+             
+            
+            
+                <input type="submit" class="submitbtn" value="Sign Up">
+
+                <div class="loginoption">
+                    <p id="alreadyAccount-tab">Have an account?</p>
+                    <div class="logintabbtn2"><p>Log In</p></div>
+                </div>
+                
+            </form>
+        </div>   
+    </div>
+</div>
+
+
+
+
+
+
+
+</div>
+<!-- end of container -->
 
 
 </body>

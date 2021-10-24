@@ -4,8 +4,8 @@ $(function(){
     
     
 
-    $(".container").slideUp();
-    $(".container2").slideDown();
+    $(".container").slideDown();
+    $(".container2").slideUp();
 
 
     $(".signtabbtn").on("click", function(){
@@ -14,7 +14,7 @@ $(function(){
        
     });
 
-   $(".logintabbtn").on("click", function(){
+   $(".logintabbtn2").on("click", function(){
          $(".container").slideDown();
          $(".container2").slideUp();
         
