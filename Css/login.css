@@ -8,10 +8,18 @@ body{
     height: 1080px;
 }
 
-.container{
+
+.container2{
     display: none;
     opacity: 0;
 }
+
+.left2{
+    display: none;
+    opacity: 0;
+}
+
+.form-container2{margin-top: 130px;}
 
 .container1{
     margin: 0 auto;
@@ -318,12 +326,19 @@ LABEL.indented-checkbox-text
         margin-top: 0px;
     }
 
+    .left2{
+        display: inline-block;
+        opacity: 1;
+    }
+
     .container1{
         opacity: 0;
         display: none;
     }
 
     .container{
+        display: inline-block;
+        opacity: 1;
         margin: 0 auto;
         width: 519.24px;
         height: 550px;
@@ -336,8 +351,7 @@ LABEL.indented-checkbox-text
         border-radius: 20px;
         margin-top: 79px;
         margin-left: 253px;
-        display: inline-block;
-        opacity: 1;
+        
     }
     
     .container2{
@@ -353,7 +367,8 @@ LABEL.indented-checkbox-text
         border-radius: 20px;
         margin-top: 79px;
         margin-left: 253px;
-
+        display: inline-block;
+        opacity: 1;
         
     }
     
@@ -396,7 +411,7 @@ LABEL.indented-checkbox-text
         width: 519.24px;
         height: 666px;
         margin: 0 auto;   
-        margin-top: 66px;
+        margin-top: 60px;
         color: white;
     }
     
@@ -715,6 +730,14 @@ LABEL.indented-checkbox-text
         display: none;
     }
 
+    #logintabtext{
+        margin-top: 5px;}
+    }
+
+    .logintabtext{
+        margin-top: 8px;
+    }
+
    .right{
     width: 50%;
     height: 800px;
@@ -725,7 +748,7 @@ LABEL.indented-checkbox-text
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 24px;
     margin-top: -60px;
-}
+    }
 
 @media only screen and (max-width:280px) {
     body{
@@ -903,6 +926,23 @@ LABEL.indented-checkbox-text
         border: solid 2px white;
         cursor: pointer;
     }
+
+    .logintabbtn2{
+        width: 45.11px;
+        height: 16px;
+        font-family: 'Days One', sans-serif;
+        font-weight: normal;
+        font-size: 5px;
+        text-align: center;
+        border-radius: 8.88px;
+        float: right;
+        margin-top: -35px;
+        border: solid 2px white;
+        cursor: pointer;
+     
+    }
+
+   
     
     .logintabbtn p{
        
@@ -966,9 +1006,13 @@ LABEL.indented-checkbox-text
       cursor: pointer;
       margin-top: -30px;
   }
-}
+
+  .logintabtext{
+      margin-top: 1px;
+  }
+  
     
- 
+
 
 
 }

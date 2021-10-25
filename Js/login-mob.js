@@ -34,8 +34,8 @@ $(function(){
             
         });
 
-        $(".logintabbtn").on("click", function(){
-            $("form").css("margin-top", "-68px");
-            
+        $(".logintabbtn2").on("click", function(){
+          $(".form-container").css("margin-top", "-30px");
+
         });
 });
