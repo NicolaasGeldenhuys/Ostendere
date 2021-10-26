@@ -12,12 +12,12 @@ $(function() {
         function getRndInteger(min, max) {
             return Math.floor(Math.random() * (min - max)) + min;
         }
-        for (i = 0; i <= getRndInteger(5, 5); i++) {
+        for (i = 0; i <= getRndInteger(3, 3); i++) {
             console.log("For loop is running");
             // console.log(i);
             // console.log(P_Movie.results[i].title);
-            var poster = ' https://image.tmdb.org/t/p/w500/' + P_Movie.results[i].poster_path;
-            var backdrop = ' https://image.tmdb.org/t/p/w500/' + P_Movie.results[i].backdrop_path;
+            var poster = 'https://image.tmdb.org/t/p/w500/' + P_Movie.results[i].poster_path;
+            var backdrop = 'https://image.tmdb.org/t/p/w500/' + P_Movie.results[i].backdrop_path;
             var TitleOfMovie = P_Movie.results[i].title;
             var synopsisOfMovie = P_Movie.results[i].overview;
             // $(".slides").append(
@@ -43,13 +43,33 @@ $(function() {
 
             console.log(poster);
             $(".item").append(
-                "<div class='movie'><img scr='" + poster + "' alt='poster of the move " + TitleOfMovie + "' class='ItemMovieImg'></div>"
+                "<div class='movie'><img src='" + poster + "' alt='poster of the move " + TitleOfMovie + "' class='ItemMovieImg'></img></div>"
             );
 
+            // <img src='" + poster + "' alt='poster of the move " + TitleOfMovie + "' class='ItemMovieImg'></img>
 
-
-
+            $(".M_scroller").append(
+                "<div class='card_S_a'> <img src='" + poster + "' alt='poster of the move " + TitleOfMovie + "' class='scrollerMovieImg'> </div>"
+            );
         }
+
+        for (i = 3; i <= getRndInteger(10, 5); i++) {
+            var poster = 'https://image.tmdb.org/t/p/w500/' + P_Movie.results[i].poster_path;
+            var TitleOfMovie = P_Movie.results[i].title;
+            $(".M_WatchLater").append(
+                "<div class='card_W_a'><img src='" + poster + "' alt='poster of the move " + TitleOfMovie + "' class='WatchLaterMovieImg'></div>"
+
+            );;
+        }
+        for (i = 5; i <= getRndInteger(10, 5); i++) {
+            var poster = 'https://image.tmdb.org/t/p/w500/' + P_Movie.results[i].poster_path;
+            var TitleOfMovie = P_Movie.results[i].title;
+            $(".M_explore").append(
+                "<div class='card_E_a'><img src='" + poster + "' alt='poster of the move " + TitleOfMovie + "' class='exploreMovieImg'></div>"
+
+            )
+        }
+
 
     });
 
@@ -70,24 +90,24 @@ $(function() {
 
 
 
-    var currentSlide = 0;
-    var $slides = $('.slides');
-    var slideCounter = $slides.children().length;
-    var animateTime = 800;
-    var slideTime = 5000;
+    // var currentSlide = 0;
+    // var $slides = $('.slides');
+    // var slideCounter = $slides.children().length;
+    // var animateTime = 800;
+    // var slideTime = 5000;
 
 
-    setInterval(function() {
-        console.log(slideCounter + " slideCounter");
-        $slides.animate({ marginLeft: '-=900px' }, animateTime, function() {
-            currentSlide++;
-            if (currentSlide === slideCounter + 1) {
-                currentSlide = 1;
-                $(this).css("margin-left", "0px")
-            }
-            console.log(" currentSlide " + currentSlide);
-        });
-        console.log("going to change")
-    }, slideTime);
+    // setInterval(function() {
+    //     console.log(slideCounter + " slideCounter");
+    //     $slides.animate({ marginLeft: '-=900px' }, animateTime, function() {
+    //         currentSlide++;
+    //         if (currentSlide === slideCounter + 1) {
+    //             currentSlide = 1;
+    //             $(this).css("margin-left", "0px")
+    //         }
+    //         console.log(" currentSlide " + currentSlide);
+    //     });
+    //     console.log("going to change")
+    // }, slideTime);
 
 });
