@@ -613,25 +613,25 @@ a {
 }
 
 .movie {
-    width: 634px;
-    height: 400px;
-    background-color: rgba(197, 131, 7, 0.5);
+    width: 534px;
+    height: 300px;
+    /* background-color: rgba(197, 131, 7, 0.5); */
     margin: 0px;
     transition: 1s;
-    border: 2px black solid;
+    /* border: 2px black solid; */
     border-radius: 2rem;
-    /* padding: 2rem; */
-    margin-left: -2rem;
-    box-shadow: 4px 4px 12px 2px rgba(black, 0.7);
+    /* padding: 2rem;
+    margin-left: -2rem; */
+    box-shadow: 4px 4px 12px 2px rgba(rgb(255, 255, 255), 0.7);
 }
 
 .ItemMovieImg {
-    width: 634px;
-    height: 400px;
-    background-color: red;
+    width: 534px;
+    height: 300px;
+    /* background-color: red; */
     border: 2px black solid;
     border-radius: 2rem;
-    display: block;
+    /* display: block; */
     object-fit: cover;
 }
 

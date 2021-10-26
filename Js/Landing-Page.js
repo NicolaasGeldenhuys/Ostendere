@@ -16,8 +16,8 @@ $(function() {
             console.log("For loop is running");
             // console.log(i);
             // console.log(P_Movie.results[i].title);
-            var poster = ' https://image.tmdb.org/t/p/w500/' + P_Movie.results[i].poster_path;
-            var backdrop = ' https://image.tmdb.org/t/p/w500/' + P_Movie.results[i].backdrop_path;
+            var poster = 'https://image.tmdb.org/t/p/w500/' + P_Movie.results[i].poster_path;
+            var backdrop = 'https://image.tmdb.org/t/p/w500/' + P_Movie.results[i].backdrop_path;
             var TitleOfMovie = P_Movie.results[i].title;
             var synopsisOfMovie = P_Movie.results[i].overview;
             // $(".slides").append(
@@ -43,7 +43,7 @@ $(function() {
 
             console.log(poster);
             $(".item").append(
-                "<div class='movie'><img scr='" + poster + "' alt='poster of the move " + TitleOfMovie + "' class='ItemMovieImg'></div>"
+                "<div class='movie'><img src='" + poster + "' alt='poster of the move " + TitleOfMovie + "' class='ItemMovieImg'></div>"
             );
 
 
