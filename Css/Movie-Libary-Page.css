@@ -11,6 +11,7 @@
     background-image: url("../img/jpegs/background_image.jpg");
     background-position: center;
     background-size:auto;
+
 }
 
 @media only screen  and (max-width:1024px){
@@ -23,7 +24,7 @@
 @media only screen  and (max-width:280px){
     .header-content{
      background-image: none;
-     height: 320px;
+     height: 200px;
     }
 }
 
@@ -210,6 +211,11 @@
     font-size: 24px;
     text-align: center;
 
+    border-bottom-color: #F1B000;
+    border-bottom-width: 5px ;
+    border-bottom-style: solid;
+    border-radius: 5px;
+
     float: right;
 }
 
@@ -235,11 +241,6 @@
 
     font-size: 24px;
     text-align: center;
-
-    border-bottom-color: #F1B000;
-    border-bottom-width: 5px ;
-    border-bottom-style: solid;
-    border-radius: 5px;
 
     float: right;
 }
@@ -723,7 +724,7 @@
 .content-block{
     height: 435px;
     margin-left: 2.5%;
-    margin-top: 80px;
+    margin-top: 10px;
 
     overflow-x: scroll;
     overflow-y: hidden;
@@ -740,7 +741,7 @@
 
 @media only screen and (max-width:280px){
     .content-block{
-    height: 280px;
+    height: 80px;
     margin-left: 5%;
     margin-top: 0px;
     }
@@ -757,12 +758,16 @@
 .title-sortBy{
     width: fit-content;
     height: fit-content;
+    margin-left: 2.8%;
 
     color: white;
 
     font-size: 45px;
 }
 
+.recommended{
+    margin-top: 30px;
+}
 @media only screen and (max-width:1024px){
     .title-sortBy{
         font-size: 35px;
@@ -771,7 +776,7 @@
 
 @media only screen and (max-width:280px){
     .title-sortBy{
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
@@ -781,8 +786,6 @@
     width: 263px;
     height: 363px;
     margin-right: 2%;
-
-    background-color: #F1B000;
     border-radius: 25px;
     display: inline-block;
 }
@@ -796,16 +799,40 @@
 
 @media only screen and (max-width:280px){
     .block{
-        width: 200px;
-        height: 200px;
+        width: 120px;
+        height: 65px;
+        border-radius: 5px;
     }
 }
 
 .block-img{
-    width: 100%;
-    height: 100%;
+    width: 263px;
+    height: 363px;
+    border-radius: 25px;
     overflow: hidden;
+    background-position: center;
+    background-size: cover;
 }
+
+@media only screen and (max-width:1024px){
+    .block-img{
+        width: 140px;
+        height: 193px;
+    }
+}
+
+@media only screen and (max-width:280px){
+    .block-img{
+        width: 120px;
+        height: 65px;
+        border-radius: 5px;
+    }
+}
+/*
+.img-div{
+    width: 100%;
+    height: 363px;
+}*/
 
 #block-rating{
     width: 32px;
@@ -845,6 +872,7 @@
     opacity: 0.5;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    z-index: 1;
 }
 
 @media only screen and (max-width:1024px){
@@ -875,11 +903,18 @@
 
 
 .movie_name{
-    margin: 13px;
+    width:55%;
+    height: fit-content;
+    margin-top: 3px;
+    margin-left: 4px;
 
+    white-space: pre-line;
     font-size: 18px;
     color: white;
     float: left;
+
+    position: relative;
+    z-index: 999;
 }
 
 @media only screen and (max-width:1024px){
@@ -895,7 +930,8 @@
 .watch_later{
     width: 32px;
     height: 32px;
-    margin: 10px;
+    margin: 5px;
+    margin-top: 10px;
 
     background-image: url("../img/icons/plus_btn.svg");
     background-position: center;
@@ -915,7 +951,8 @@
 .play_movie{
     width: 32px;
     height: 32px;
-    margin: 10px;
+    margin: 5px;
+    margin-top: 10px;
 
     background-image: url("../img/icons/play_btn.svg");
     background-position: center;
