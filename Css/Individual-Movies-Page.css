@@ -178,7 +178,7 @@
             .home {
                 height: 50px;
                 width: 50px;
-                font-size: 15px;
+                font-size: 10px;
             }
         }
         
@@ -202,7 +202,7 @@
             .browse {
                 height: 50px;
                 width: 50px;
-                font-size: 15px;
+                font-size: 10px;
             }
         }
         
@@ -219,18 +219,18 @@
             margin-right: 6%;
             font-size: 22px;
             text-align: center;
-            border-bottom-color: #F1B000;
-            border-bottom-width: 5px;
-            border-bottom-style: solid;
+            
+        
             border-radius: 5px;
             float: right;
+            
         }
         
         @media only screen and (max-width:1024px) {
             .watch-later {
                 height: 25px;
                 width: 65px;
-                font-size: 15px;
+                font-size: 10px;
             }
         }
         
@@ -254,7 +254,7 @@
             .profile {
                 height: 50px;
                 width: 150px;
-                font-size: 15px;
+                font-size: 10px;
                 margin-right: 1%;
             }
         }
@@ -273,6 +273,7 @@
             background-size: cover;
             border-radius: 22px;
             float: right;
+            margin-top: -2px;
         }
         
         @media only screen and (max-width:1024px) {
@@ -404,6 +405,31 @@
         }
         /* Search bar */
         
+        .buttonS1{
+            display: none;
+            opacity: 0;
+        }
+
+        .buttonS2{
+            display: none;
+            opacity: 0;
+        }
+
+        .buttonS3{
+            display: none;
+            opacity: 0;
+        }
+
+        .buttonS4{
+            display: none;
+            opacity: 0;
+        }
+
+        .buttonS5{
+            display: none;
+            opacity: 0;
+        }
+
         .search-bar {
             width: 95%;
             height: 45px;
@@ -456,6 +482,11 @@
             background-color: #F1B000;
         }
         
+        .slider{
+            display: none;
+            opacity: 0;
+        }
+
         .watchnow-title {
             height: 57px;
             width: 254px;
@@ -497,11 +528,7 @@
             margin-top: 5%;
         }
         
-        .watchlatericon {
-            float: right;
-            margin-right: 15px;
-            margin-top: -60px;
-        }
+
         
         .details {
             width: 1784px;
@@ -517,7 +544,7 @@
                 margin-left: 0px;
             }
             .directors {
-                font-size: 20px !important;
+                font-size: 18px !important;
             }
             .contentD {
                 font-size: 19px !important;
@@ -673,6 +700,8 @@
             color: white;
             margin-left: 152px;
             float: left;
+            margin-left: 0px; 
+            margin-top: -32px;
         }
         
         .trailerVids{
@@ -684,4 +713,289 @@
             border: white solid 2px;
             margin-top: 185px;
             background-color: gray;
+        }
+
+        .mainPlayButton{
+            display: none;
+            opacity: 0;
+        }
+
+        .synopsis{
+            opacity: 0;
+            display: none;
+        }
+
+
+        @media only screen and (max-width: 1200px) {
+
+            .container-fluid{
+                border-radius: 40px;
+                margin-top: 22px;
+                margin-left: 24px;
+                width: 978px;
+                height: 728px;
+            }
+
+            #title{
+                color: white;
+                font-size: 48px;
+                font-weight: normal;
+                margin-left: 72px;
+                margin-top: 103px;
+            }
+
+            .trailers{
+                margin: 0 auto;
+                font-weight: normal;
+                font-size: 26px;
+                margin-top: -340px;
+                margin-left: 710px;
+                font-family: 'Days One', sans-serif;
+                color: white;
+                float: left;
+            }   
+
+            .trailerVids{
+                width: 253px;
+                height: 130px;
+                border-radius: 20px;
+                margin: 0 auto;
+                margin-left: 0px;
+                border: white solid 2px;
+                margin-top: -300px;
+                margin-left: 710px;
+                background-color: gray;
+            }
+    
+            body {
+                width: 1024px;
+                height: 768px;
+                margin: 0 auto;
+                padding: 0;
+                max-width: 1024px;
+                max-height: 768px;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .watchnow{
+                display: none;
+                opacity: 0;
+            }
+
+            .watchlater {
+                height: 43px;
+                width: 253px;
+                margin-top: -70px;
+                margin-right: -53px;
+                font-size: 22px;
+                text-align: center;
+                border: white solid 2px;
+                margin-right: 15px;
+                float: right;
+                border-radius: 40px;
+            }
+
+            .watchlater-title {
+                height: 57px;
+                width: 254px;
+                margin: 0 auto;
+                font-weight: normal;
+                font-size: 14px;
+                text-align: center;
+                font-family: 'Days One', sans-serif;
+                color: white;
+                margin-top: 5%;
+            }
+
+            .watchlatericon {
+                float: right;
+                margin-right: 15px;
+                margin-top: -62.5px;
+            }
+
+            .mainPlayButton{
+                display: inline-block;
+                opacity: 1;
+                margin: 0 auto;
+                margin-left: 438px;
+                margin-top: -300px;
+                padding: 0;
+            }
+
+            .contentD{
+                display: none;
+                opacity: 0;
+            }
+
+            .contentC{
+                display: none;
+                opacity: 0;
+            }
+
+            .contentR{
+                display: none;
+                opacity: 0;
+            }
+
+            .contentRdiv{
+                display: none;
+                opacity: 0;
+            }
+
+            .contentY{
+                display: none;
+                opacity: 0;
+            }
+
+            .directors{
+                margin-top: -1px;
+                margin: 0 auto;
+                font-weight: normal;
+                font-size: 18px;
+                text-align: left;
+                font-family: 'Days One', sans-serif;
+                color: white;
+                margin-left: 220px;
+            }
+
+            .synopsis{
+                
+                margin-top: -25px !important;
+                
+                font-weight: normal;
+                font-size: 18px;
+                text-align: left;
+                font-family: 'Days One', sans-serif;
+                color: white;
+                float: left;
+                margin-left: 68px;
+                display: inline-block;
+                opacity: 1;
+                position: relative;
+            }
+
+            .cast {
+                
+                margin: 0 auto;
+                font-weight: normal;
+                font-size: 18px;
+                text-align: left;
+                font-family: 'Days One', sans-serif;
+                color: white;
+                float: right;
+                margin-right: 545px;
+                margin-top: -25px !important;
+            }
+
+            .rating {
+                margin-top: -25px !important;
+                margin: 0 auto;
+                font-weight: normal;
+                font-size: 18px;
+                text-align: left;
+                font-family: 'Days One', sans-serif;
+                color: white;
+                float: right;
+                margin-right: 404px;
+            }
+
+            .year {
+                margin-top:  -25px !important;
+                margin: 0 auto;
+                font-weight: normal;
+                font-size: 18px;
+                text-align: left;
+                font-family: 'Days One', sans-serif;
+                color: white;
+                float: right;
+                margin-right: 281px;
+            }
+
+            .descText{
+                opacity: 1;
+                display: inline-block;
+                font-size: 14px;
+            }
+
+            .slider{
+                display: inline-block;
+                opacity: 1;
+                width: 630px;
+                height: 2px;
+                float: left;
+                margin-top: -150px;
+                margin-left: 68px;
+                background-color: white;
+                border-radius: 100px;
+            }
+
+            .buttonS1{
+                opacity: 1;
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                border-radius: 1000px;
+                background-color: #F1B000;
+                float: left;
+                margin-top: -157px;
+                margin-left: 104px;
+            }
+
+            .buttonS2{
+                opacity: 1;
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                border-radius: 1000px;
+                background-color: white;
+                float: left;
+                margin-top: -157px;
+                margin-left: 260px;
+            }
+
+            .buttonS3{
+                opacity: 1;
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                border-radius: 1000px;
+                background-color: white;
+                float: left;
+                margin-top: -157px;
+                margin-left: 400px;
+            }
+
+            .buttonS4{
+                opacity: 1;
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                border-radius: 1000px;
+                background-color: white;
+                float: left;
+                margin-top: -157px;
+                margin-left: 530px;
+            }
+
+            .buttonS5{
+                opacity: 1;
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                border-radius: 1000px;
+                background-color: white;
+                float: left;
+                margin-top: -157px;
+                margin-left: 665px;
+            }
+
+            .desc{
+                margin-top: 45px;
+                width: 630px;
+                height: 125px;
+                float: left;
+                margin-left: -85px;
+            }
+
         }
