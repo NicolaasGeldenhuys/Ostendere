@@ -124,7 +124,7 @@ $(function() {
 
 
             $(".M_explore").append(
-                "<div class='card_E_a' " + posterimage + "><div class='info_box'></div></div>\
+                "<div class='card_E_a' " + posterimage + "></div></div>\
                 \
                 "
 
