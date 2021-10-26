@@ -60,7 +60,7 @@ $(function(){
             var username = $(".username").val();
             var password = $(".password").val();
     
-        url = "https://api.themoviedb.org/3/movie/76341?api_key=20f38ff4b76767fa633118365643bf5d";
+        url = "https://owmakerspace.co.za/users/data.json";
     
         $.getJSON(url, function(result){
         console.log(result.users);
