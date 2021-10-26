@@ -632,7 +632,7 @@ a {
     border: 2px black solid;
     border-radius: 2rem;
     /* display: block; */
-    object-fit: cover;
+    display: inline-block;
 }
 
 .movie:hover {
@@ -655,6 +655,15 @@ a {
     display: none;
 }
 
+.scrollerMovieImg {
+    width: 200px;
+    height: 348px;
+    display: inline-block;
+    border-radius: 5px;
+    /* margin-left: 5px;
+    margin-top: 5px; */
+}
+
 .card_S_a {
     width: 200px;
     height: 348px;
@@ -666,31 +675,11 @@ a {
     margin-top: 5px;
 }
 
-.card_S_b {
-    width: 200px;
-    height: 348px;
-    background-color: orange;
-    display: inline-block;
-    border-radius: 5px;
-    margin-left: 5px;
-    margin-top: 5px;
-}
-
-.card_S_c {
-    width: 200px;
-    height: 348px;
-    background-color: orange;
-    display: inline-block;
-    border-radius: 5px;
-    margin-left: 5px;
-    margin-top: 5px;
-}
-
 .M_WatchLater {
-    height: 100px;
+    height: 150px;
     background-color: #27292F;
     align-items: center;
-    padding-top: 15px;
+    /* padding-top: 15px; */
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -700,38 +689,32 @@ a {
     display: none;
 }
 
+.WatchLaterMovieImg {
+    width: 82px;
+    height: 204px;
+    background-color: orange;
+    display: inline-block;
+}
+
+.exploreMovieImg {
+    width: 82px;
+    height: 204px;
+    background-color: orange;
+    display: inline-block;
+}
+
 .card_W_a {
     width: 82px;
-    height: 52px;
+    height: 204px;
+    border-radius: 5px;
     background-color: orange;
     display: inline-block;
-    border-radius: 5px;
-    margin-left: 5px;
-    margin-top: 5px;
-}
-
-.card_W_b {
-    width: 82px;
-    height: 52px;
-    background-color: orange;
-    display: inline-block;
-    border-radius: 5px;
-    margin-left: 5px;
-    margin-top: 5px;
-}
-
-.card_W_c {
-    width: 82px;
-    height: 52px;
-    background-color: orange;
-    display: inline-block;
-    border-radius: 5px;
     margin-left: 5px;
     margin-top: 5px;
 }
 
 .M_explore {
-    height: 100px;
+    height: 150px;
     background-color: #27292F;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -749,27 +732,7 @@ a {
 
 .card_E_a {
     width: 82px;
-    height: 52px;
-    background-color: orange;
-    display: inline-block;
-    border-radius: 5px;
-    margin-left: 5px;
-    margin-top: 5px;
-}
-
-.card_E_b {
-    width: 82px;
-    height: 52px;
-    background-color: orange;
-    display: inline-block;
-    border-radius: 5px;
-    margin-left: 5px;
-    margin-top: 5px;
-}
-
-.card_E_c {
-    width: 82px;
-    height: 52px;
+    height: 204px;
     background-color: orange;
     display: inline-block;
     border-radius: 5px;
