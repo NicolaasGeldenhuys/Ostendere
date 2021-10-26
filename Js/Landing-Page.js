@@ -90,24 +90,24 @@ $(function() {
 
 
 
-    var currentSlide = 0;
-    var $slides = $('.slides');
-    var slideCounter = $slides.children().length;
-    var animateTime = 800;
-    var slideTime = 5000;
+    // var currentSlide = 0;
+    // var $slides = $('.slides');
+    // var slideCounter = $slides.children().length;
+    // var animateTime = 800;
+    // var slideTime = 5000;
 
 
-    setInterval(function() {
-        console.log(slideCounter + " slideCounter");
-        $slides.animate({ marginLeft: '-=900px' }, animateTime, function() {
-            currentSlide++;
-            if (currentSlide === slideCounter + 1) {
-                currentSlide = 1;
-                $(this).css("margin-left", "0px")
-            }
-            console.log(" currentSlide " + currentSlide);
-        });
-        console.log("going to change")
-    }, slideTime);
+    // setInterval(function() {
+    //     console.log(slideCounter + " slideCounter");
+    //     $slides.animate({ marginLeft: '-=900px' }, animateTime, function() {
+    //         currentSlide++;
+    //         if (currentSlide === slideCounter + 1) {
+    //             currentSlide = 1;
+    //             $(this).css("margin-left", "0px")
+    //         }
+    //         console.log(" currentSlide " + currentSlide);
+    //     });
+    //     console.log("going to change")
+    // }, slideTime);
 
 });
