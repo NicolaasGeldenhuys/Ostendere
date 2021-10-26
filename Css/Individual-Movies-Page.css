@@ -169,7 +169,7 @@
             width: 100px;
             margin-top: 27px;
             margin-right: 6%;
-            font-size: 24px;
+            font-size: 22px;
             text-align: center;
             float: right;
         }
@@ -193,7 +193,7 @@
             width: 100px;
             margin-top: 27px;
             margin-right: 6%;
-            font-size: 24px;
+            font-size: 22px;
             text-align: center;
             float: right;
         }
@@ -217,7 +217,7 @@
             width: 150px;
             margin-top: 27px;
             margin-right: 6%;
-            font-size: 24px;
+            font-size: 22px;
             text-align: center;
             border-bottom-color: #F1B000;
             border-bottom-width: 5px;
@@ -245,7 +245,7 @@
             width: 254px;
             margin-top: 27px;
             margin-right: 1%;
-            font-size: 24px;
+            font-size: 22px;
             text-align: center;
             float: right;
         }
@@ -431,6 +431,14 @@
         #title {
             margin-left: 100px;
             color: white;
+            float: left;
+            margin: 0 auto;
+            margin-left: -80px;
+            margin-top: 67px;
+            font-family: 'Days One', sans-serif;
+            text-align: left;
+            font-size: 64px;
+            font-weight: normal;
         }
         
         .buttons-div {
@@ -474,6 +482,7 @@
             /*float: right;*/
             border: #FFFFFF solid 2px;
             background-color: transparent;
+            font-size: 22px;
         }
         
         .watchlater-title {
@@ -481,7 +490,7 @@
             width: 254px;
             margin: 0 auto;
             font-weight: normal;
-            font-size: 21px;
+            font-size: 22px;
             text-align: center;
             font-family: 'Days One', sans-serif;
             color: white;
@@ -542,4 +551,137 @@
             font-size: 64px;
             font-family: 'Days One', sans-serif;
             color: white;
+        }
+
+        .cast {
+            margin-top: 14px;
+            margin: 0 auto;
+            font-weight: normal;
+            font-size: 26px;
+            text-align: left;
+            font-family: 'Days One', sans-serif;
+            color: white;
+            float: left;
+        }
+        
+        .contentC {
+            margin: 0 auto;
+            font-weight: bolder;
+            font-size: 21px;
+            text-align: left;
+            font-family: 'KoHo', sans-serif;
+            color: white;
+            margin-left: 152px;
+            float: left;
+            margin-top: -28px;
+            float: left;
+        }
+
+        .rating {
+            margin-top: 14px;
+            margin: 0 auto;
+            font-weight: normal;
+            font-size: 26px;
+            text-align: left;
+            font-family: 'Days One', sans-serif;
+            color: white;
+            margin-left: 152px;
+            float: left;
+        }
+        
+        .contentR {
+            margin: 0 auto;
+         
+            font-size: 10px;
+            text-align: left;
+            font-family: 'Days One', sans-serif;
+            color: #F1B000;
+            margin-left: 15px;
+            float: left;
+            margin-top: -34px;
+            z-index: 999;
+            position: relative;
+            
+        }
+
+        .contentRdiv{
+            margin: 0 auto;
+            height: 47px;
+            width: 47px;
+            font-size: 10px;
+            text-align: left;
+            font-family: 'Days One', sans-serif;
+            color: #F1B000;
+            margin-left: 152px;
+            float: left;
+            margin-top: -28px;
+        }
+
+        .year{
+            margin-top: 14px;
+            margin: 0 auto;
+            font-weight: normal;
+            font-size: 26px;
+            text-align: left;
+            font-family: 'Days One', sans-serif;
+            color: white;
+            float: left;
+        }
+        
+        .contentY {
+            margin: 0 auto;
+            font-weight: bolder;
+            font-size: 21px;
+            text-align: left;
+            font-family: 'KoHo', sans-serif;
+            color: white;
+            margin-left: 152px;
+            float: left;
+            margin-top: -28px;
+            
+        }
+
+        .desc{
+            width: 1684px;
+            height: 148px;
+            float: left;
+            margin: 0 auto;
+            margin-top: 15px;
+            margin-left: 0px;
+            /* background-color: gray; */
+            padding: 0px;
+        }
+
+        .descText{
+            font-weight: bolder;
+            font-size: 24px;
+            text-align: left;
+            font-family: 'KoHo', sans-serif;
+            color: white;
+            padding: 0px;
+            float: left;
+            margin-top: -6px;
+        }
+
+        .trailers {
+            margin-top: 14px;
+            margin: 0 auto;
+            font-weight: normal;
+            font-size: 26px;
+            text-align: left;
+            font-family: 'Days One', sans-serif;
+            color: white;
+            margin-left: 152px;
+            float: left;
+        }
+        
+        .trailerVids{
+            width: 345px;
+            height: 178px;
+            border-radius: 40px;
+            margin: 0 auto;
+            margin-left: 0px;
+            border: white solid 2px;
+            margin-top: 185px;
+            background-color: gray;
         }
