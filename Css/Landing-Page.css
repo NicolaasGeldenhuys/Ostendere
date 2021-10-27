@@ -578,13 +578,15 @@ a {
     .movieInfo {
         width: 979px;
         height: 168px;
-        background-color: #27292F;
-        left: 20px;
+        /* background-color: #27292F; */
+        margin-top: 500px;
+        overflow: hidden;
+        display: flex;
+        /* left: 20px; */
     }
-    h1 {
-        font-size: 24px;
-        line-height: 31px;
-        color: #FFFFFF;
+    .MovieTitle {
+        margin-top: 0px;
+        font-size: 25px;
     }
     h2 {
         font-size: 20px !important;
@@ -593,6 +595,7 @@ a {
     .synopsis {
         height: 30px;
         width: 600px;
+        margin-top: 80px;
         font-family: KoHo;
         font-size: 14px;
         line-height: 18px;
@@ -602,8 +605,10 @@ a {
     .btnContainer {
         width: 200px;
         height: 100px;
-        background-color: rgb(255, 192, 203);
+        /* background-color: rgb(255, 192, 203); */
         float: right;
+        margin-top: 15px;
+        margin-left: 620px;
         position: relative;
     }
     .btnWatchLater {
