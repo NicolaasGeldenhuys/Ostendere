@@ -313,7 +313,7 @@
             height: 100%;
         }
         
-        @media only screen and (min-width:281px) {
+        @media only screen and (min-width:280px) {
             .p-menu1 {
                 display: none;
             }
@@ -543,9 +543,7 @@
             .details {
                 margin-left: 0px;
             }
-            .directors {
-                font-size: 18px !important;
-            }
+            
             .contentD {
                 font-size: 19px !important;
             }
@@ -917,7 +915,7 @@
             .descText{
                 opacity: 1;
                 display: inline-block;
-                font-size: 14px;
+                font-size: 9px;
             }
 
             .slider{
@@ -1026,13 +1024,16 @@
                 opacity: 0;
             }
 
+        
+
         .contentcon{
             width: 248px;
             height: 283px;
             border-radius: 20px;
             background-color: #27292F;
             margin-left: 5px;
-            margin-top: 240px;
+            margin-top: 315px;
+            
         }
 
         .buttonS1{
@@ -1063,32 +1064,85 @@
         
 
         .directors{
-                
-            margin-top: -25px !important;
             
             font-weight: normal;
             font-size: 14px;
             text-align: left;
             font-family: 'Days One', sans-serif;
             color: white;
+
             float: left;
-            margin-left: 14px;
+            margin-top: -670px !important;
+            margin-left: 20px;
             display: inline-block;
-            opacity: 0;
+            opacity: 1;
+            position: relative;
+        }
+
+        .cast{
+            font-weight: normal;
+            font-size: 14px;
+            text-align: left;
+            font-family: 'Days One', sans-serif;
+            color: white;
+
+            float: left;
+            margin-top: -640px !important;
+            margin-left: 20px !important;
+            display: inline-block;
+            opacity: 1;
+            position: relative;
+        }
+
+        .mainTrailerButton{
+            font-weight: normal;
+            font-size: 14px;
+            text-align: left;
+            font-family: 'Days One', sans-serif;
+            color: white;
+
+            float: left;
+            margin-top: -490px !important;
+            margin-left: 40px;
+            display: inline-block;
+            opacity: 1;
+            position: relative;
+        }
+
+        .mainWatchLaterButton{
+            font-weight: normal;
+            font-size: 14px;
+            text-align: left;
+            font-family: 'Days One', sans-serif;
+            color: white;
+
+            box-shadow:0px 0px 0px 2px white inset;
+
+            border-radius: 40px;
+
+            
+
+            float: left;
+            margin-top: -490px !important;
+            margin-left: 150px !important;
+            display: inline-block;
+            opacity: 1;
             position: relative;
         }
 
         .synopsis{
                 
-            margin-top: -25px !important;
+            
             
             font-weight: normal;
             font-size: 14px;
             text-align: left;
             font-family: 'Days One', sans-serif;
             color: white;
+
             float: left;
-            margin-left: 14px;
+            margin-top: -610px !important;
+            margin-left: 20px;
             display: inline-block;
             opacity: 1;
             position: relative;
@@ -1099,12 +1153,40 @@
     opacity: 0;
 }
 
+.firstRow{
+    height: 653px;
+    overflow: none;
+}
+
+.details{
+    background-color: violet;
+    /* margin-top: -700px;
+    position: relative; */
+}
+
+.buttons-div{
+    background-color: violet;
+    /* margin-top: -700px;
+    position: relative; */
+}
+
+.row{
+    background-color: violet;
+}
+
 .navigation2{
     display: inline-block;
     opacity: 1;
     height: 105px;
-    width: 100%;
+    width: 280px;
+    margin-top: -45px !important;
+    float: left;
+overflow: scroll; 
+
+/* Figure out if putting nav in container fluid or trying to move other divs. */
+    
 }
+
 
 
 @media only screen  and (max-width:280px){
@@ -1121,11 +1203,11 @@
 
     .container-fluid{
         border-radius: 20px;
-        margin-top: 15px;
-        margin-left: 12px;
+        margin-top: 40px;
+        margin-left: 10px;
         width: 260px;
-        height: 577px;
-        background-color: red;
+        height: 653px;
+        overflow: hidden;
     }
 
     .year{
@@ -1133,29 +1215,60 @@
         opacity: 0;
     }
 
+    
+
     .desc{
-        
         width: 215px;
         overflow: scroll;
         font-size: 9px;
         font-weight: bolder;
-        margin-left: -60px;
-        margin-top: -660px;
+        margin-left: 20px;
+        margin-top: -590px;
+        
     }
 
     .mainPlayButton{
         width: 69px;
-        margin-left: 15px;
-        
+        margin-left: 96px;
         float: left;
-        margin-top: -850px !important;
+        margin-top: -815px !important;
+    }
+
+    .contentY{
+ 
+        font-weight: normal;
+        font-size: 14px;
+        text-align: left;
+        font-family: 'KoHo', sans-serif;
+        color: white;
+
+        float: left;
+        margin-top: -700px !important;
+        margin-left: 20px !important;
+        display: inline-block;
+        opacity: 1;
+        position: relative;
+    }
+
+    .contentRdiv{
+        opacity: 1;
+        display: inline-block;
+        float: left;
+        margin-top: -735px !important;
+        margin-left: 200px !important;
+        
+    }
+
+    .contentR{
+        opacity: 1;
+        display: inline-block;
     }
 
     #title{
        font-size: 24px;
        font-weight: normal; 
        margin-top: -275px;
-       margin-left: 25px;
+       margin-left: 20px;
        z-index: 999;
     }
 
@@ -1281,6 +1394,10 @@ body {
     background-position: center;
     width: 280px;
     height: 653px;
+    max-width: 280px;
+    max-height: 653px;
+    overflow: hidden;
+    background-color: #27292F;
 }
 
 @media only screen  and (max-width:280px){
