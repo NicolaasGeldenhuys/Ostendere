@@ -578,8 +578,10 @@ a {
     .movieInfo {
         width: 979px;
         height: 168px;
-        /* background-color: #27292F; */
+        background-color: #27292F;
         margin-top: 500px;
+        border-radius: 35px;
+        margin-left: 20px;
         overflow: hidden;
         display: flex;
         /* left: 20px; */
