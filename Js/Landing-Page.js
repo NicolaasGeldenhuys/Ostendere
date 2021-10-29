@@ -125,7 +125,6 @@ $(function() {
 
             $(".M_explore").append(
                 "<div class='card_E_a' " + posterimage + "></div></div>\
-                \
                 "
 
             )
@@ -135,7 +134,25 @@ $(function() {
     });
 
 
+    $(".btnWatchLater").on("click", function() {
 
+
+
+        const P_url = 'https://api.themoviedb.org/3/movie/top_rated?api_key=20f38ff4b76767fa633118365643bf5d&language=en-US&page=2';
+
+        $.getJSON(P_url, function(P_Movie) {
+            console.log(P_Movie);
+            for (i = 0; i < P_Movie.results.length; i++) {
+
+
+            }
+
+        }); //end of Http
+
+
+
+
+    }); //end of .btnWatchlater
 
 
 
