@@ -50,51 +50,55 @@ $(function(){
         $(this).attr("src","img/SignUpButton.png");
     });
 
-
-
+    $(".submitbtn2").on("click", function(){
+        window.location.href = "Pages/Landing-Page.html";
+    });
     
 
 
-        $(".btn").on("click", function(){
+        $(".submitbtn").on("click", function(){
             
             var username = $(".username").val();
             var password = $(".password").val();
+        
     
         url = "https://owmakerspace.co.za/users/data.json";
     
         $.getJSON(url, function(result){
-        console.log(result.users);
-    
+        
         for(i = 0; i < result.users.length; i++){
+            
+                 console.log(result.users[i].username);
+            if(result.users[i].username === username){
+                 
+                if(result.password[i].password === password){
+                    console.log("The password or email is correct.");
     
-            if(result.users[i] === username){
-                console.log("The user does exist.");
-                
-                if(result.password[i] === password){
-                    console.log("The password is correct.");
-    
-                    if(result.account[i] === "active"){
-                        window.location.href = "#";
+                    if(result.users[i].account === "active"){
+                        window.location.href = "Pages/Landing-Page.html";
                         sessionStorage.setItem("username", username);                   
+                        alert("Successfuly logged in.");
                         console.log("Successfuly logged in.");
-                        $(".messsage").css("background-color","green");
+                       
     
                     } else{
-                        $(".messsage").css("background-color","yellow");
-                        console.log("Your account has been suspended. Contact support!");
+                        
+                        alert("Your account has been suspended. Contact support!");
                     }
     
                 } else{
-                $(".messsage").css("background-color","orange");
-                console.log("The password is incorrect.");
+               
+                alert("The password or email is incorrect.");
                 }
     
             } else {
-            $(".messsage").css("background-color","red");    
-            console.log("Your email or password does not match.");
-            } //Checking for user
-    
+                alert("Your email or password does not match.");
+        
+                
+            
         }
+       
+    } //Checking for user
     
         }); //End of request
     

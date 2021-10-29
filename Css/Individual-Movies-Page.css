@@ -16,23 +16,36 @@
         /* Navigation */
         
         .header-content {
-            /*width: 100%;*/
             height: 80px;
-            /* background-image: url("../img/jpegs/background_image.jpg");*/
-            /*  background-color: #27292F;*/
-            /* background-position: center;
-            background-size: auto;*/
         }
         
         @media only screen and (max-width:280px) {
             .header-content {
-                /* background-image: none;*/
                 height: 50px;
                 width: auto;
             }
         }
         /* Navigation */
         
+        a{
+            color: white;
+            font-size: 22px;
+            font-family: 'Days One', sans-serif;
+            font-weight: normal;
+        }
+
+        .mainTrailerButton{
+            display: none;
+        }
+
+        .mainWatchLaterButton{
+            display: none;
+        }
+
+        .navigation{
+            display: none;
+        }
+
         .navigation {
             height: 50px;
             /*width: 100%;*/
@@ -281,6 +294,56 @@
                 height: 25px;
                 width: 25px;
             }
+
+            .mainTrailerButton{
+                display: inline-block;
+            }
+    
+            .mainWatchLaterButton{
+                display: inline-block;
+            }
+    
+            .navigation{
+                display: inline-block;
+            }
+    
+            a{
+                font-size: 10px;
+            }
+
+            .desc{
+                margin-top: -150px !important;
+                margin-right: 400px !important;
+                float: right;
+            }
+
+            .mainTrailerButton{
+                display: none;
+            }
+
+            .mainWatchLaterButton{
+                display: none;
+            }
+
+            .descText{
+                margin-top: 40px !important;
+                margin-left: 160px;
+            }
+            
+            .contentC{
+                display: inline-block;
+                opacity: 1;
+            }
+
+            .watchlater{
+                margin-top: -40px !important;
+            }
+
+            .contentY{
+                display: inline-block;
+            }
+
+           
         }
         
         @media only screen and (max-width:280px) {
@@ -550,7 +613,7 @@
         }
         
         .directors {
-            margin-top: 14px;
+            margin-top: 25px !important;
             margin: 0 auto;
             font-weight: normal;
             font-size: 26px;
@@ -579,14 +642,14 @@
         }
 
         .cast {
-            
             margin: 0 auto;
-            margin-top: -414px !important;
+            margin-top: -30px !important;
+            margin-left:200px !important;
             font-weight: normal;
             font-size: 26px;
             text-align: left;
             font-family: 'Days One', sans-serif;
-            color: black;
+            color: white;
             float: left;
         }
         
@@ -644,14 +707,14 @@
         }
 
         .year{
-            margin-top: 14px;
-            margin: 0 auto;
+            margin-top: -42px !important;
+            margin-right: 350px !important;
             font-weight: normal;
             font-size: 26px;
             text-align: left;
             font-family: 'Days One', sans-serif;
             color: white;
-            float: left;
+            float: right;
         }
         
         .contentY {
@@ -662,8 +725,9 @@
             font-family: 'KoHo', sans-serif;
             color: white;
             margin-left: 152px;
-            float: left;
-            margin-top: -28px;
+            float: right;
+            margin-top: -55px !important;
+            margin-right: 300px;
             
         }
 
@@ -687,7 +751,7 @@
             color: white;
             padding: 0px;
             float: left;
-            margin-top: -6px;
+            margin-top: -175px;
         }
 
         .trailers {
@@ -701,7 +765,7 @@
             margin-left: 152px;
             float: left;
             margin-left: 0px; 
-            margin-top: -32px;
+            margin-top: 140px !important;
         }
         
         .trailerVids{
@@ -808,11 +872,7 @@
                 margin-top: 5%;
             }
 
-            .watchlatericon {
-                float: right;
-                margin-right: 15px;
-                margin-top: -62.5px;
-            }
+         
 
             .mainPlayButton{
                 display: inline-block;
@@ -861,7 +921,7 @@
 
             .synopsis{
                 
-                margin-top: -25px !important;
+                margin-top: -200px !important;
                 
                 font-weight: normal;
                 font-size: 18px;
@@ -885,11 +945,11 @@
                 color: white;
                 float: right;
                 margin-right: 545px;
-                margin-top: -25px !important;
+                margin-top: -200px !important;
             }
 
             .rating {
-                margin-top: -25px !important;
+                margin-top: -200px !important;
                 margin: 0 auto;
                 font-weight: normal;
                 font-size: 18px;
@@ -901,7 +961,7 @@
             }
 
             .year {
-                margin-top:  -25px !important;
+                margin-top:  -200px !important;
                 margin: 0 auto;
                 font-weight: normal;
                 font-size: 18px;
@@ -909,7 +969,7 @@
                 font-family: 'Days One', sans-serif;
                 color: white;
                 float: right;
-                margin-right: 281px;
+                margin-right: 280px !important;
             }
 
             .descText{

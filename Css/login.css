@@ -159,6 +159,26 @@ input{
     border: none;
 }
 
+.submitbtn2{
+    width: 608px;
+    height: 56.69px;
+    background-color: #F1B000;
+    color: #f7f7f7;
+    margin:  0 auto;
+    margin-top: 33px;
+    border-radius: 40px;
+    font-size: 20.21px;
+    font-weight: 300 !important;
+    transition: all ease 200ms;
+    font-family: 'Days One', sans-serif;
+    border: none;
+}
+
+
+.submitbtn2:hover{
+    transform: scale(1.025);
+    cursor: pointer;
+}
 
 .submitbtn:hover{
     transform: scale(1.025);
@@ -454,6 +474,26 @@ LABEL.indented-checkbox-text
         margin-left: 5px;
     }
     .submitbtn:hover{
+        transform: scale(1.025);
+        cursor: pointer;
+    }
+
+    .submitbtn2{
+        width: 462.22px;
+        height: 43.1px;
+        background-color: #F1B000;
+        color: #f7f7f7;
+        margin:  0 auto;
+        margin-top: 26px;
+        border-radius: 40px;
+        font-size: 20.21px;
+        font-weight: 300 !important;
+        transition: all ease 200ms;
+        font-family: 'Days One', sans-serif;
+        border: none;
+        margin-left: 5px;
+    }
+    .submitbtn2:hover{
         transform: scale(1.025);
         cursor: pointer;
     }
@@ -877,6 +917,17 @@ LABEL.indented-checkbox-text
         margin-left: 0px;
     }
     
+
+    .submitbtn2{
+        width: 209px;
+        height: 29.84px;
+        background-color: #F1B000;
+        border-radius: 21.05px;
+        margin-top: 22px;
+        color: white;
+        margin-left: 0px;
+    }
+    
     .loginoption{
         height: 16px;
         width: 209px; 
@@ -957,7 +1008,7 @@ LABEL.indented-checkbox-text
         font-weight: bolder;
     }
     
-    .submitbtn:hover{
+    .submitbtn2:hover{
         transform: scale(1.025);
         cursor: pointer;
     }
