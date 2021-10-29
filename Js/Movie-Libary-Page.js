@@ -4,7 +4,7 @@ $(document).ready(function() {
     console.log("This is a test.");
 
     $("#rating").click(function() {
-        $(this).attr("src", "img/icons/full_heart.svg")
+        $(this).css("background-image", "../img/icons/full_heart.svg");
     });
 
     // movie api
@@ -12,13 +12,12 @@ $(document).ready(function() {
         var pageNom = 1;
         // const url = 'https://api.themoviedb.org/3/movie/' + movieID + '?api_key=20f38ff4b76767fa633118365643bf5d';
 
-           while(pageNom < 40){
+           while(pageNom < 55){
         const TopRatedMoviesUrl = 'https://api.themoviedb.org/3/movie/top_rated?api_key=20f38ff4b76767fa633118365643bf5d&language=en-US&page=1';
         PopulareMoviesUrl = 'https://api.themoviedb.org/3/movie/popular?api_key=20f38ff4b76767fa633118365643bf5d&language=en-US&page='+ pageNom ;
 
         $.getJSON(PopulareMoviesUrl, function(result) {
-            console.log(result);
-            console.log("see me");
+
 
          
             for (i = 0; i < result.results.length; i++) {
@@ -27,12 +26,6 @@ $(document).ready(function() {
                 var rating = result.results[i].vote_average;
                 var title = result.results[i].original_title;
                 var image_test = `style= "background-image: url(`+ image +`);"`;
-                
-
-                console.log(image);
-                console.log(rating);
-                console.log(title);
-
 
                 if(result.results[i].original_language === "en"){
                 if (rating > 8) {
@@ -272,10 +265,10 @@ $(document).ready(function() {
                     if (date.includes(filter)) {
                         $("#active-block").append(
                             "<div class='block block-img' "+ image_test +">\
-                        <div id='block-rating'>'" + rating + "'</div>\
+                        <div id='block-rating'>" + rating + "</div>\
                         <div class='like'></div>\
                         <div class='info_box'>\
-                        <div class='movie_name'>'" + title + "'</div>\
+                        <div class='movie_name'>" + title + "</div>\
                         <div class='play_movie'></div>\
                         <div class='watch_later'></div>\
                         </div>\
@@ -318,10 +311,10 @@ $(document).ready(function() {
                     if (select_rating < rating && rating < select_rating+1) {
                         $("#active-block").append(
                             "<div class='block block-img' "+ image_test +">\
-                        <div id='block-rating'>'" + rating + "'</div>\
+                        <div id='block-rating'>" + rating + "</div>\
                         <div class='like'></div>\
                         <div class='info_box'>\
-                        <div class='movie_name'>'" + title + "'</div>\
+                        <div class='movie_name'>" + title + "</div>\
                         <div class='play_movie'></div>\
                         <div class='watch_later'></div>\
                         </div>\
@@ -370,10 +363,10 @@ $(document).ready(function() {
                         $("#active-block").empty();
                         $("#active-block").append(
                             "<div class='block block-img' "+ image_test +">\
-                        <div id='block-rating'>'" + rating + "'</div>\
+                        <div id='block-rating'>" + rating + "</div>\
                         <div class='like'></div>\
                         <div class='info_box'>\
-                        <div class='movie_name'>'" + title + "'</div>\
+                        <div class='movie_name'>" + title + "</div>\
                         <div class='play_movie'></div>\
                         <div class='watch_later'></div>\
                         </div>\
