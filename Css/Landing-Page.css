@@ -28,17 +28,12 @@ h3 {
 }
 
 .header-content {
-    /*width: 100%;*/
     height: 80px;
-    /* background-image: url("../img/jpegs/background_image.jpg");*/
     background-color: #27292F;
-    /* background-position: center;
-        background-size: auto;*/
 }
 
 @media only screen and (max-width:280px) {
     .header-content {
-        /* background-image: none;*/
         height: 50px;
         width: auto;
     }
@@ -49,7 +44,6 @@ h3 {
 
 .navigation {
     height: 50px;
-    /*width: 100%;*/
 }
 
 @media only screen and (max-width:1024px) {
@@ -449,10 +443,8 @@ a {
 }
 
 
-/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .slider {
-    /*width: 1921px;*/
     height: 687px;
     background-color: rgb(179, 178, 178);
     padding: 0 !important;
@@ -468,30 +460,21 @@ a {
 }
 
 .carousel-Slider {
-    /* display: flex; */
-    /* width: 100%; */
     height: 687px;
     display: flex;
 }
 
 .imgSlides {
     width: 1920px;
-    /* height: 687px; */
     object-fit: cover;
 }
 
 .movieInfo {
     width: 1000px;
     height: 345px;
-    /* background-color: rgb(70, 69, 69); */
-    /* margin: 0 auto; */
-    /* margin-bottom: 25px; */
     padding-left: 20px;
     position: absolute;
     margin-top: 350px;
-    /* position: relative; */
-    /* bottom: 0;
-    left: 0; */
     overflow: hidden;
     display: flex;
 }
@@ -500,32 +483,19 @@ a {
     width: 500px !important;
     height: 60px !important;
     margin-top: 20px;
-    /* background-color: tomato; */
     font-family: Days One;
     font-size: 35px;
     font-style: normal;
     align-items: center;
     display: block;
-    /* margin: 0 auto; */
     color: white;
     position: absolute;
 }
 
 
-/* h1 {
-    font-family: Days One;
-    font-style: normal;
-    font-size: 41px !important;
-    align-items: center;
-    display: flex; 
-     margin: 0 auto;
-     color: white;
-} */
-
 .synopsis {
     height: 100px;
     width: 568px;
-    /* background-color: tomato; */
     position: absolute;
     margin-top: 100px;
     font-family: Jaldi;
@@ -533,17 +503,12 @@ a {
     font-weight: normal;
     font-size: 22px;
     color: white;
-    /* align-items: center;
-    margin-top: 60px;
-    padding: 0;
   
-    position: sticky; */
 }
 
 .btnContainer {
     width: 400px;
     height: 150px;
-    /* background-color: rgba(126, 16, 34, 1); */
     margin-top: 120px;
     margin-left: 585px;
     float: right;
@@ -552,14 +517,11 @@ a {
 .btnWatchLater {
     width: 297px;
     height: 57px;
-    /* margin-top: 150px;
-    margin-left: -50px; */
     background-color: #27292F;
     text-align: center;
     border-radius: 4rem;
     padding-left: 40px;
     padding-top: 10px;
-    /* float: right; */
 }
 
 .btnWatchNow {
@@ -585,7 +547,6 @@ a {
         margin-left: 20px;
         overflow: hidden;
         display: flex;
-        /* left: 20px; */
     }
     .MovieTitle {
         margin-top: 0px;
@@ -593,7 +554,6 @@ a {
     }
     h2 {
         font-size: 20px !important;
-        /*line-height: 14px;*/
     }
     .synopsis {
         height: 30px;
@@ -608,7 +568,6 @@ a {
     .btnContainer {
         width: 200px;
         height: 100px;
-        /* background-color: rgb(255, 192, 203); */
         float: right;
         margin-top: 15px;
         margin-left: 620px;
@@ -642,10 +601,8 @@ a {
 }
 
 
-/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .trending {
-    /* width: 1921px;*/
     height: 487px;
     background-color: #27292F;
     position: relative;
@@ -659,23 +616,18 @@ a {
     height: 100px;
     position: absolute;
     top: 25%;
-    /* background-color: rgb(95, 93, 93); */
     display: flex;
     justify-content: center;
-    /* margin-left: 40px; */
     padding: 0px !important;
 }
 
 .movie {
     width: 300px;
     height: 300px;
-    /* background-color: rgba(197, 131, 7, 0.5); */
     margin: 0px;
     transition: 1s;
     border: 2px black solid;
     border-radius: 2rem;
-    /* padding: 2rem;
-    margin-left: -2rem; */
     box-shadow: 4px 4px 12px 2px rgba(rgb(255, 255, 255), 0.7);
     background-position: center;
     background-size: cover;
@@ -684,10 +636,8 @@ a {
 .ItemMovieImg {
     width: 300px;
     height: 300px;
-    /* background-color: red; */
     border: 2px black solid;
     border-radius: 2rem;
-    /* display: block; */
     display: inline-block;
 }
 
@@ -717,8 +667,6 @@ a {
     height: 348px;
     display: inline-block;
     border-radius: 5px;
-    /* margin-left: 5px;
-    margin-top: 5px; */
 }
 
 .card_S_a {
@@ -738,7 +686,6 @@ a {
     height: 150px;
     background-color: #27292F;
     align-items: center;
-    /* padding-top: 15px; */
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -817,8 +764,6 @@ a {
     border: 0.5px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 15px;
-    /* margin-bottom: 10px;*/
-    /* padding-bottom: 10px;*/
     display: flex;
     align-items: center;
     justify-content: center;

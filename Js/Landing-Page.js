@@ -6,18 +6,13 @@ $(function() {
 
     $.getJSON(P_url, function(P_Movie) {
 
-        // console.log(P_Movie.results.length);
 
-        // console.log("For loop is going to start");
-        //console.log(P_Movie.length);
         function getRndInteger(min, max) {
             return Math.floor(Math.random() * (min - max)) + min;
         }
 
         for (i = 0; i <= getRndInteger(5, 3); i++) {
-            // console.log("For loop is running");
-            // console.log(i);
-            // console.log(P_Movie.results[i].title);
+
             var poster = 'https://image.tmdb.org/t/p/w500/' + P_Movie.results[i].poster_path;
             var backdrop = 'https://image.tmdb.org/t/p/w500/' + P_Movie.results[i].backdrop_path;
             var posterimage = `style= "background-image: url(` + poster + `);"`;
@@ -26,7 +21,6 @@ $(function() {
             var synopsisOfMovie = P_Movie.results[i].overview;
 
 
-            // console.log(poster);
             $(".carousel-Slider").append(
                 "<div class='Slides'>\
                         <div class='movieInfo'>\
@@ -55,7 +49,7 @@ $(function() {
                 "<div class='movie'" + posterimage + "></img></div>"
             );
 
-            // <img src='" + poster + "' alt='poster of the move " + TitleOfMovie + "' class='ItemMovieImg'></img>
+    
 
             $(".M_scroller").append(
                 "<div class='card_S_a' " + posterimage + "> </div>"
@@ -94,8 +88,7 @@ $(function() {
 
 
 
-        // console.log(poster);
-        // console.log(posterimage);
+     
 
         function getRndInteger(min, max) {
             return Math.floor(Math.random() * (min - max)) + min;
@@ -109,8 +102,6 @@ $(function() {
             var posterimage = `style= "background-image: url(` + poster + `);"`;
             var backdropimage = `style= "background-image: url(` + backdrop + `);"`;
 
-            // console.log(i);
-            // console.log(posterimage);
             $(".M_WatchLater").append(
                 "<div class='card_W_a' " + posterimage + "></div>"
             );
@@ -159,16 +150,16 @@ $(function() {
 
 
     setInterval(function() {
-        // console.log(slideCounter + " slideCounter");
+
         $slides.animate({ marginLeft: '-=1920px' }, animateTime, function() {
             currentSlide++;
             if (currentSlide === 7) {
                 currentSlide = 1;
                 $(this).css("margin-left", "0px")
             }
-            // console.log(" currentSlide " + currentSlide);
+
         });
-        // console.log("going to change")
+    
     }, slideTime);
 
     $(".btnWatchNow").on("click", function() {
