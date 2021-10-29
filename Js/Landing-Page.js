@@ -26,7 +26,7 @@ $(function() {
             var synopsisOfMovie = P_Movie.results[i].overview;
 
 
-            console.log(poster);
+            // console.log(poster);
             $(".carousel-Slider").append(
                 "<div class='Slides'>\
                         <div class='movieInfo'>\
@@ -94,8 +94,8 @@ $(function() {
 
 
 
-        console.log(poster);
-        console.log(posterimage);
+        // console.log(poster);
+        // console.log(posterimage);
 
         function getRndInteger(min, max) {
             return Math.floor(Math.random() * (min - max)) + min;
@@ -104,12 +104,13 @@ $(function() {
         for (i = 0; i <= getRndInteger(10, 5); i++) {
             var poster = 'https://image.tmdb.org/t/p/w500/' + P_Movie.results[i].poster_path;
             var backdrop = 'https://image.tmdb.org/t/p/w500/' + P_Movie.results[i].backdrop_path;
+            var ID = P_Movie.results[i].id;
 
             var posterimage = `style= "background-image: url(` + poster + `);"`;
             var backdropimage = `style= "background-image: url(` + backdrop + `);"`;
 
-            console.log(i);
-            console.log(posterimage);
+            // console.log(i);
+            // console.log(posterimage);
             $(".M_WatchLater").append(
                 "<div class='card_W_a' " + posterimage + "></div>"
             );
@@ -134,25 +135,7 @@ $(function() {
     });
 
 
-    $(".btnWatchLater").on("click", function() {
 
-
-
-        const P_url = 'https://api.themoviedb.org/3/movie/top_rated?api_key=20f38ff4b76767fa633118365643bf5d&language=en-US&page=2';
-
-        $.getJSON(P_url, function(P_Movie) {
-            console.log(P_Movie);
-            for (i = 0; i < P_Movie.results.length; i++) {
-
-
-            }
-
-        }); //end of Http
-
-
-
-
-    }); //end of .btnWatchlater
 
 
 
@@ -176,16 +159,70 @@ $(function() {
 
 
     setInterval(function() {
-        console.log(slideCounter + " slideCounter");
+        // console.log(slideCounter + " slideCounter");
         $slides.animate({ marginLeft: '-=1920px' }, animateTime, function() {
             currentSlide++;
             if (currentSlide === 7) {
                 currentSlide = 1;
                 $(this).css("margin-left", "0px")
             }
-            console.log(" currentSlide " + currentSlide);
+            // console.log(" currentSlide " + currentSlide);
         });
-        console.log("going to change")
+        // console.log("going to change")
     }, slideTime);
+
+    $(".btnWatchNow").on("click", function() {
+
+        console.log()
+
+        const P_url = 'https://api.themoviedb.org/3/movie/top_rated?api_key=20f38ff4b76767fa633118365643bf5d&language=en-US&page=2';
+
+        $.getJSON(P_url, function(P_Movie) {
+            console.log(P_Movie);
+            for (i = 0; i < P_Movie.results.length; i++) {
+                if (P_Movie.results[i] === TitleOfMovie) {}
+                console.log(TitleOfMovie + "==" + P_Movie.results[i])
+            }
+
+        }); //end of Http
+
+
+
+
+    }); //end of .btnWatchNow
+
+    $(".movie").on("click", function() {
+
+        console.log('Movie Click')
+
+    }); //end of .movie
+
+    $(".card_S_a").on("click", function() {
+
+        console.log('card_S_a Click')
+
+    }); //end of .card_S_a
+
+
+    $(".card_W_b").on("click", function() {
+
+        console.log('card_W_b Click')
+
+    }); //end of .card_W_b
+
+    $(".imgSlides").on("click", function() {
+
+        console.log('imgSlides Click')
+
+    }); //end of .   imgSlides
+
+
+
+
+
+
+
+
+
 
 });
